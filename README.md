@@ -28,14 +28,20 @@
 - Image processing pipeline:
     - Raw image => Binary image => ROI (of raw image) => Segmented image (3 pixel values) => Classification
 
-    - Raw image
+    - Raw image (1600x1200)
+
     ![Raw image](assets/965.png)
 
-    - Binary image
+    - Binary image (1600x1200)
+
     ![Binary image](assets/965_bin.png)
 
-    - ROI image
+    - ROI image (350x351 => Vary for each images)
+
     ![ROI image](assets/965_bin_ROI.png)
 
-    - Segmented image
+    - Segmented image (350x351 => Vary for each images)
+
     ![Segmented image](assets/965_bin_ROI_segmented.png)
+
+### 
