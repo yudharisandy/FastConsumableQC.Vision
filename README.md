@@ -8,7 +8,7 @@
 - Furthermore, in my case, some are installed automatically by anaconda once I created a new environment. So it might be not always same.
 
 ## Run the code:
-- Change directory: /FastConsumableQC.Vision/src/
+- Set active directory to `/FastConsumableQC.Vision/src/`
 - `python main.py`
 
 ## How to use:

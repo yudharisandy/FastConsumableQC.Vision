@@ -13,6 +13,7 @@ dataset = 'dataset'
 isTrain = False
 
 visionWrapper = VisionWrapper(dataset, isFolder, isTrain)
+
 classificationResult = visionWrapper.ExecuteTipQCClassification()
 
 print("Main end.")
