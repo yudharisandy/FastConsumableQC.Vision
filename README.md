@@ -13,13 +13,29 @@
 
 ## How to use:
 - You could input whether a single image or a folder that contains many images by modifying main.py
-- Example for inferencing with input a folder whcih contains many images
+- Example for inferencing by inputing a folder whcih contains many images
     - `isFolder = True`
     - `dataset = 'dataset`
-- Example for inferencing with input a single image
+- Example for inferencing by inputing a single image
     - `isFolder = False`
     - `dataset = 'test_image\\5451.png'`
 - The classification result will be printed in the terminal
 
 ## Result
-- The dumped images will be store inside /FastConsumableQC.Vision/image_dump/
+- The dumped images will be store inside `/FastConsumableQC.Vision/image_dump/` directory.
+
+### Highlevel overview
+- Image processing pipeline:
+    - Raw image => Binary image => ROI (of raw image) => Segmented image (3 pixel values) => Classification
+
+    - Raw image
+    ![Raw image](assets/965.png)
+
+    - Binary image
+    ![Binary image](assets/965_bin.png)
+
+    - ROI image
+    ![ROI image](assets/965_bin_ROI.png)
+
+    - Segmented image
+    ![Segmented image](assets/965_bin_ROI_segmented.png)

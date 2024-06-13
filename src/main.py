@@ -5,12 +5,12 @@ print("Main is starting")
 isTrain = False
 
 # Example for inferencing with input a folder whcih contains many images
-# isFolder = True
-# dataset = 'dataset'
+isFolder = True
+dataset = 'dataset'
 
 # Example for inferencing with input a single image
-isFolder = False
-dataset = 'test_image\\5451.png'
+# isFolder = False
+# dataset = 'test_image\\5451.png'
 
 visionWrapper = VisionWrapper(dataset, isFolder, isTrain)
 classificationResult = visionWrapper.ExecuteClassification()
