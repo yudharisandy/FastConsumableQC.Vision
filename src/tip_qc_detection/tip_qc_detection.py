@@ -58,8 +58,8 @@ class TipQCDetector:
         print(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.Train.__name__}, end")
     
     
-    def ExecuteClassification(self, roi_images):
-        print(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.ExecuteClassification.__name__}, start")
+    def ExecuteTipQCClassification(self, roi_images):
+        print(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.ExecuteTipQCClassification.__name__}, start")
         
         for roi_image_name in roi_images.keys():
             img = roi_images[roi_image_name]
@@ -69,5 +69,9 @@ class TipQCDetector:
             self.segmentation_images[roi_image_name] = imgSegmented
             
             self.visionCommon.save_image(imgSegmented, roi_image_name, 'bin_ROI_segmented', segmentation=True, isFolder=self.isFolder)
+            
+            # Classificatio calculation
         
-        print(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.ExecuteClassification.__name__}, end")
+        
+        
+        print(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.ExecuteTipQCClassification.__name__}, end")

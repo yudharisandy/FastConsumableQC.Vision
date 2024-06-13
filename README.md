@@ -24,7 +24,7 @@
 ## Result
 - The dumped images will be store inside `/FastConsumableQC.Vision/image_dump/` directory.
 
-### Highlevel overview
+### Highlevel Overview
 - Image processing pipeline:
     - Raw image => Binary image => ROI (of raw image) => Segmented image (3 pixel values) => Classification
 
@@ -44,4 +44,6 @@
 
     ![Segmented image](assets/965_bin_ROI_segmented.png)
 
-### 
+### Final Classification Result
+- Final decision is based on segmented image.
+- 

@@ -2,8 +2,6 @@ from vision_wrapper import VisionWrapper
 
 print("Main is starting")
 
-isTrain = False
-
 # Example for inferencing with input a folder whcih contains many images
 isFolder = True
 dataset = 'dataset'
@@ -12,8 +10,10 @@ dataset = 'dataset'
 # isFolder = False
 # dataset = 'test_image\\5451.png'
 
+isTrain = False
+
 visionWrapper = VisionWrapper(dataset, isFolder, isTrain)
-classificationResult = visionWrapper.ExecuteClassification()
+classificationResult = visionWrapper.ExecuteTipQCClassification()
 
 print("Main end.")
 

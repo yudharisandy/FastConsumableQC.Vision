@@ -22,11 +22,11 @@ class Playground:
     print(f"Image files: {self.image_files}")
     
   
-  def ExecuteClassification(self):
+  def ExecuteTipQCClassification(self):
     roi_images = self.roiProcessor.Execute(self.image_files, self.dataset)
     
     if(self.isTrain):
       self.tipQCDetector.Train(roi_images['965.png'], '965.png')
     
-    self.tipQCDetector.ExecuteClassification(roi_images)
+    self.tipQCDetector.ExecuteTipQCClassification(roi_images)
     
