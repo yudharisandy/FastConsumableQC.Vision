@@ -9,7 +9,9 @@ import cv2
 from basic_image_processor.vision_common import VisionCommon
 
 class ROIProcessor:
-  def __init__(self):
+  def __init__(self, isFolder=False):
+    print(f"Object: {ROIProcessor.__name__} was created")
+    self.isFolder = isFolder
     self.roi_images = {}
     self.visionCommon = VisionCommon()
     sigma_min = 1
@@ -37,9 +39,14 @@ class ROIProcessor:
     return x, y, w, h
   
   def Execute(self, image_files, dataset_folder):
+    print(f"Object: {ROIProcessor.__name__}, method: {ROIProcessor.Execute.__name__}, start")
+    
     for image_filename in image_files:
-
-        image_path = os.path.join(dataset_folder, image_filename)
+        if(self.isFolder):
+          image_path = os.path.join(dataset_folder, image_filename)
+        else:
+          image_path = image_files[0]
+          
         img = io.imread(image_path)
 
         gray_img = color.rgb2gray(img)
@@ -51,7 +58,11 @@ class ROIProcessor:
 
         binary_img_clean = morphology.remove_small_objects(binary_img, min_size=500)
         binary_img_clean = (binary_img_clean * 255).astype(np.uint8)
-        self.visionCommon.save_image(binary_img_clean, image_filename, 'bin')
+        
+        if(self.isFolder):
+          self.visionCommon.save_image(binary_img_clean, image_filename, 'bin', isFolder=self.isFolder)
+        else:
+          self.visionCommon.save_image(binary_img_clean, image_files[0], 'bin')
 
         # Get the largest contour
         largest_contour = self.get_largest_contour(binary_img_clean)
@@ -59,24 +70,13 @@ class ROIProcessor:
         if largest_contour is not None:
             x, y, w, h = self.get_bounding_box(largest_contour)
             roi_img = img[y:y+h, x:x+w]
-            self.visionCommon.save_image(roi_img, image_filename, 'bin_ROI')
-            self.roi_images[image_path] = roi_img
-
-            # fig, ax = plt.subplots(1, 3, figsize=(15, 5))
-            # ax[0].imshow(img)
-            # ax[0].set_title(f'Original Image: {image_file}')
-            # ax[1].imshow(binary_img_clean, cmap='gray')
-            # ax[1].set_title('Binary Image')
-            # ax[2].imshow(roi_img)
-            # ax[2].set_title('ROI Image')
-            # plt.show()
+            
+            self.visionCommon.save_image(roi_img, image_filename, 'bin_ROI', isFolder = self.isFolder)
+            
+            self.roi_images[image_filename] = roi_img
         else:
             print(f"No valid ROI found for {image_filename}")
-            # Visualize the original image, binary image, and the ROI
-            # fig, ax = plt.subplots(1, 3, figsize=(15, 5))
-            # ax[0].imshow(img)
-            # ax[0].set_title('Original Image')
-            # ax[1].imshow(binary_img_clean, cmap='gray')
-            # ax[1].set_title('Binary Image')
-            # plt.show()
+                
+    print(f"Object: {ROIProcessor.__name__}, method: {ROIProcessor.Execute.__name__}, end")
+    return self.roi_images
   

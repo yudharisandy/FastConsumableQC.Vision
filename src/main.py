@@ -1,20 +1,22 @@
-import os
-import numpy as np
-import matplotlib.pyplot as plt
-from skimage import io, segmentation, feature, future, color, filters, morphology
-from sklearn.ensemble import RandomForestClassifier
-from functools import partial
-import cv2
-
 from vision_wrapper import VisionWrapper
 
-print("Program is starting")
+print("Main is starting")
 
-dataset_folder = 'dataset'
-visionWrapper = VisionWrapper(dataset_folder)
-visionWrapper.ExecuteClassification()
 
-print("Program end.")
+isTrain = False
+
+# Example for using with a folder whcih contains many images
+# isFolder = True
+# dataset = 'dataset'
+
+# Example for using with an image
+isFolder = False
+dataset = 'test_image\\5451.png'
+
+visionWrapper = VisionWrapper(dataset, isFolder, isTrain)
+classificationResult = visionWrapper.ExecuteClassification()
+
+print("Main end.")
 
 # import zmq
 

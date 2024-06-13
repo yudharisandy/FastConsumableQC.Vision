@@ -9,6 +9,18 @@
 
 ## Run the code:
 - Change directory: /FastConsumableQC.Vision/src/
-- python main.py
+- `python main.py`
 
-##
+## How to use:
+- You could input whether a single image of a folder that contains many images
+- by modifying the main.py
+- Example for using with a folder whcih contains many images
+    - `isFolder = True`
+    - `dataset = 'dataset`
+- Example for using with a single image
+    - `isFolder = False`
+    - `dataset = 'test_image\\5451.png'`
+- The classification result will be printed in the terminal
+
+## Result
+- The dumped images will be store inside /FastConsumableQC.Vision/image_dump/
