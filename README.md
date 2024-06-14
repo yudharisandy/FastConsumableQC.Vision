@@ -36,7 +36,7 @@ FastConsumableQC.Vision
 - `python main.py`
 
 ## How to use:
-- You could input a single image, camera stream, or a folder that contains many images by modifying some parts.
+- You could input a single image, camera stream, or a folder that contains many images by modifying ```main.py```.
 - Example for inferencing by inputing a folder.
     ```
     folderPath = 'dataset'
@@ -51,11 +51,7 @@ FastConsumableQC.Vision
 - Example for inferencing by inputing a camera stream.
 
     ```result = visionWrapper.ExecuteTipQCClassification()```
-- The classification result will be printed in the terminal.
-  
-    
-    # # Execute many images in a folder
-    
+- The classification result will be printed in the terminal.   
 
 ## Result
 - The dumped images will be stored inside `/FastConsumableQC.Vision/image_dump/` directory.
