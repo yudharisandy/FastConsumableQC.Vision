@@ -1,39 +1,23 @@
-from vision_wrapper import VisionWrapper
+from VisionWrapper import VisionWrapper
+from Common.Logger import Logger
+import logging
 
-print("Main is starting")
+if __name__ == "__main__":
+    
+    Logger.setup_logging()
+    
+    logger = logging.getLogger(__name__)
+    
+    logger.debug('Main is starting')
 
-# Example for inferencing with input a folder whcih contains many images
-isFolder = True
-dataset = 'dataset'
+    visionWrapper = VisionWrapper()
+    
+    # Execute one frame whether from a file or a camera stream
+    # For executing using camera stream, look at the constructor of FrameGrabber object
+    # tipQCClassificationResult = visionWrapper.ExecuteTipQCClassification()
 
-# Example for inferencing with input a single image
-# isFolder = False
-# dataset = 'test_image\\5451.png'
-
-isTrain = False
-
-visionWrapper = VisionWrapper(dataset, isFolder, isTrain)
-
-classificationResult = visionWrapper.ExecuteTipQCClassification()
-
-print("Main end.")
-
-# import zmq
-
-# print("Initialize connection")
-# context = zmq.Context()
-# socket = context.socket(zmq.REP)
-# socket.bind("tcp://127.0.0.1:5555")
-# print("start listening...")
-
-# while True:
-#     print("Receiving message...")
-#     message = socket.recv_string()
-#     print(f"Received message: {message}")
-
-#     # Perform your machine learning task here
-
-#     print("Sending message...")
-#     result = f"Processed: {message}"
-#     socket.send_string(result)
-#     print("Message sent")
+    # Execute one folder
+    dataset_folder = 'dataset'
+    tipQCClassificationFolderResult = visionWrapper.ExecuteTipQClassificationOnFolder(dataset_folder)
+    
+    logger.debug("Main end.")

@@ -1,32 +1,32 @@
-import os
-import pickle
-from basic_image_processor.roi_processor import ROIProcessor
-from tip_qc_detection.tip_qc_detection import TipQCDetector
-from sklearn.ensemble import RandomForestClassifier
+from BasicImageProcessor.RoiProcessor import ROIProcessor
+from TipQCDetection.TipQCDetection import TipQCDetector
+from FrameGrabber import FrameGrabber
+import logging
 
 class Playground:
-  def __init__(self, dataset, isFolder=False, isTrain=False):
-    print(f"Object: {Playground.__name__} was created, isFolder: {isFolder}")
+    def __init__(self, isTrainTipQC):
+        self.logger = logging.getLogger(__name__)
+        self.logger.debug(f"Object: {Playground.__name__} was created")
+        
+        self.roiProcessor = ROIProcessor()
+        self.tipQCDetector = TipQCDetector(isTrainTipQC)
     
-    self.dataset = dataset
-    self.isTrain = isTrain
-    self.isFolder = isFolder
+    def ExecuteTipQCClassification(self, rawImage):
+        self.logger.debug(f"Object: {Playground.__name__}, method: {Playground.ExecuteTipQCClassification.__name__}, start")
+        
+        roiImage = self.roiProcessor.Execute(rawImage)
+        if(roiImage is not None): 
+            self.tipQCDetector.ExecuteTipQCClassification(roiImage)
+        
+        self.logger.debug(f"Object: {Playground.__name__}, method: {Playground.ExecuteTipQCClassification.__name__}, end")
     
-    self.roiProcessor = ROIProcessor(isFolder)
-    self.tipQCDetector = TipQCDetector(isTrain, isFolder)
-    
-    if(isFolder):  
-      self.image_files = [f for f in os.listdir(dataset) if f.endswith(('.png', '.jpg', '.jpeg'))]
-    else:
-      self.image_files = [dataset]
-    print(f"Image files: {self.image_files}")
-    
-  
-  def ExecuteTipQCClassification(self):
-    roi_images = self.roiProcessor.Execute(self.image_files, self.dataset)
-    
-    if(self.isTrain):
-      self.tipQCDetector.Train(roi_images['965.png'], '965.png')
-    
-    self.tipQCDetector.ExecuteTipQCClassification(roi_images)
-    
+    def TrainTipQCClassification(self, imagePathToTrain):
+        self.logger.debug(f"Object: {Playground.__name__}, method: {Playground.TrainTipQCClassification.__name__}, start")
+        
+        frameGrabberToTrain = FrameGrabber()
+        rawImageToTrain = frameGrabberToTrain.GrabFrameToTrain(imagePathToTrain)
+        roiImageToTrain = self.roiProcessor.Execute(rawImageToTrain)
+        self.tipQCDetector.Train(roiImageToTrain)
+        del frameGrabberToTrain
+        
+        self.logger.debug(f"Object: {Playground.__name__}, method: {Playground.TrainTipQCClassification.__name__}, end")
