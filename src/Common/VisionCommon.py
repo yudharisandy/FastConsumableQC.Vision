@@ -8,7 +8,7 @@ class VisionCommon:
         self.logger = logging.getLogger(__name__)
         self.logger.debug(f"Object: {VisionCommon.__name__} was created")
     
-    def SaveImage(self, image, processingType, segmentation=False):
+    def SaveImage(self, image, processingType, segmentation=False, circle=False):
         self.logger.debug(f"Object: {VisionCommon.__name__}, method: {VisionCommon.SaveImage.__name__}, start")
         
         folder_path = 'image_dump'
@@ -19,11 +19,16 @@ class VisionCommon:
         file_name = f'{current_time}_{processingType}.png'
         file_path = os.path.join(folder_path, file_name)
         
-        if not segmentation:    
-            cv2.imwrite(file_path, image)
-        else:
+        if segmentation and not circle:
             scaled_image = image * 85
-            cv2.imwrite(file_path, scaled_image)
+            cv2.imwrite(file_path, scaled_image)    
+        elif circle and not segmentation:
+            scaled_image = image * 255
+            cv2.imwrite(file_path, scaled_image)   
+        else:
+            cv2.imwrite(file_path, image)
+        
+        
         self.logger.debug(f"Object: {VisionCommon.__name__}, method: {VisionCommon.SaveImage.__name__}, State: Image saved as {file_path}")
         
         self.logger.debug(f"Object: {VisionCommon.__name__}, method: {VisionCommon.SaveImage.__name__}, end")

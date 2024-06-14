@@ -4,7 +4,9 @@ from functools import partial
 from skimage import feature, future
 from sklearn.ensemble import RandomForestClassifier
 from Common.VisionCommon import VisionCommon
+from LowLevelAnalyzer.CircleChecker import CircleChecker
 import logging
+from Common.Label import Label
 
 class TipQCDetector:
     def __init__(self, isTrainTipQC):
@@ -12,6 +14,8 @@ class TipQCDetector:
         self.logger.debug(f"Object: {TipQCDetector.__name__} was created")
         
         self.visionCommon = VisionCommon()
+        self.circleChecker = CircleChecker()
+        
         if(isTrainTipQC):
             self.classifier = RandomForestClassifier()
         else:
@@ -29,7 +33,6 @@ class TipQCDetector:
             sigma_max=sigma_max,
             channel_axis=-1,
         )
-        
         
 
     def Train(self, imageToTrain):
@@ -68,6 +71,25 @@ class TipQCDetector:
         
         self.visionCommon.SaveImage(imgSegmented, 'bin-roi-segmented', segmentation=True)
         
-        # Classificatio calculation        
+        # Inner circle analysis
+        innerCircleRegion = imgSegmented == 3
+        scoreInnerCircle = self.circleChecker.Analyze(innerCircleRegion)
+        self.visionCommon.SaveImage(innerCircleRegion, f'bin_roi_segmented_inner-circle_{scoreInnerCircle:.4f}', circle=True)
+        
+        # Outer circle analysis 
+        outerCircleRegion = imgSegmented == 2
+        scoreOuterCircle = self.circleChecker.Analyze(outerCircleRegion)
+        self.visionCommon.SaveImage(outerCircleRegion, f'bin_roi_segmented_outer-circle_{scoreOuterCircle:.4f}', circle=True)       
+        
+        label = self.FinalClassifier(scoreInnerCircle, scoreOuterCircle)
         
         self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.ExecuteTipQCClassification.__name__}, end")
+        return label
+    
+    def FinalClassifier(self, scoreInnerCircle, scoreOuterCircle):
+        if scoreInnerCircle < 0.4:
+            self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.FinalClassifier.__name__}, Label: {Label.NG.name},  end")
+            return Label.NG
+        elif scoreInnerCircle > 0.8:
+            return Label.AG
+        return Label.Undefined

@@ -5,6 +5,32 @@
 - skimage: `pip install scikit-image`
 - OpenCV: `pip install opencv-python`
 
+## Foldering Structure
+```
+FastConsumableQC.Vision
+├── assets
+├── dataset
+├── image_dump
+├── log
+├── models
+├── test_images
+├── src
+    ├── Common
+        ├── Label.py
+        ├── Logger.py
+        └── VisionCommon.py
+    ├── HighLevelProcessor
+        └── TipQCDetector.py
+    ├── LowLevelProcessor
+        ├── GreyProcessor.py
+        └── RoiProcessor.py
+    ├── Utils
+        └── FrameGrabber.py
+    ├── main.py
+    ├── Playground.py
+    └── VisionWrapper.py 
+```
+
 ## Run the code:
 - Set active directory to `/FastConsumableQC.Vision/src/`
 - `python main.py`

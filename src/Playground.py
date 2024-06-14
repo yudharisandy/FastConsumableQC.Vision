@@ -15,10 +15,13 @@ class Playground:
         self.logger.debug(f"Object: {Playground.__name__}, method: {Playground.ExecuteTipQCClassification.__name__}, start")
         
         roiImage = self.roiProcessor.Execute(rawImage)
+        label = None
         if(roiImage is not None): 
-            self.tipQCDetector.ExecuteTipQCClassification(roiImage)
+            label = self.tipQCDetector.ExecuteTipQCClassification(roiImage)
         
         self.logger.debug(f"Object: {Playground.__name__}, method: {Playground.ExecuteTipQCClassification.__name__}, end")
+        
+        return label
     
     def TrainTipQCClassification(self, imagePathToTrain):
         self.logger.debug(f"Object: {Playground.__name__}, method: {Playground.TrainTipQCClassification.__name__}, start")
