@@ -14377,3 +14377,2066 @@
 2024-06-14 22:29:57 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\965.png, Label: AG
 2024-06-14 22:29:57 DEBUG: Object: VisionWrapper, method: ExecuteTipQCClassification, end
 2024-06-14 22:29:57 DEBUG: Main end.
+2024-06-14 22:37:57 DEBUG: Main is starting
+2024-06-14 22:37:57 DEBUG: Object: VisionWrapper was created
+2024-06-14 22:37:57 DEBUG: Object: Playground was created
+2024-06-14 22:37:57 DEBUG: Object: ROIProcessor was created
+2024-06-14 22:37:57 DEBUG: Object: VisionCommon was created
+2024-06-14 22:37:57 DEBUG: Object: GreyProcessor was created
+2024-06-14 22:37:57 DEBUG: Object: TipQCDetector was created
+2024-06-14 22:37:57 DEBUG: Object: VisionCommon was created
+2024-06-14 22:37:57 DEBUG: Object: CircleChecker was created
+2024-06-14 22:37:57 DEBUG: Object: VisionCommon was created
+2024-06-14 22:37:57 DEBUG: Object: FrameGrabber was created
+2024-06-14 22:37:59 DEBUG: Object: VisionWrapper, method: ExecuteTipQCClassification, start
+2024-06-14 22:37:59 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:37:59 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:37:59 DEBUG: STREAM b'IDAT' 41 7826
+2024-06-14 22:37:59 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:37:59 DEBUG: STREAM b'IDAT' 41 7826
+2024-06-14 22:37:59 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:37:59 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:37:59 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:37:59 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:37:59 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-37-594088_bin.png
+2024-06-14 22:37:59 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours none, end
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: Execute, Result: No valid ROI found for this frame
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:37:59 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:37:59 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\44.png, Label: Undefined
+2024-06-14 22:37:59 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:37:59 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:37:59 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:37:59 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:37:59 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:37:59 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:37:59 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:37:59 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:37:59 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:37:59 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-37-595421_bin.png
+2024-06-14 22:37:59 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 586, y: 495, w: 399, h: 412
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:37:59 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:37:59 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-37-595494_bin-roi.png
+2024-06-14 22:37:59 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:37:59 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:37:59 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-009703_bin-roi-segmented.png
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:00 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:00 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-009834_bin-roi-segmented-boundary.png
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:00 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:00 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.1255199926319303, score: 0.12551999263193037, end
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-009904_bin_roi_segmented_inner-circle_0.1255.png
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:00 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:00 DEBUG: Object: CircleChecker, method: Analyze, circularity: 2.1258133222298112, score: -0.12581332222981123, end
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-009934_bin_roi_segmented_outer-circle_-0.1258.png
+2024-06-14 22:38:00 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:00 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:38:00 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:00 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:00 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\4752.png, Label: NG
+2024-06-14 22:38:00 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:01 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:01 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:01 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:01 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:01 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:01 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:01 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:01 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:01 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:01 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-011556_bin.png
+2024-06-14 22:38:01 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:01 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:01 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:01 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:01 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 610, y: 494, w: 399, h: 403
+2024-06-14 22:38:01 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:01 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:01 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-011676_bin-roi.png
+2024-06-14 22:38:01 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:01 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:01 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-024585_bin-roi-segmented.png
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:02 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:02 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-024665_bin-roi-segmented-boundary.png
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:02 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:02 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.13262144774198223, score: 0.13262144774198226, end
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-024704_bin_roi_segmented_inner-circle_0.1326.png
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:02 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:02 DEBUG: Object: CircleChecker, method: Analyze, circularity: 2.1086575739388125, score: -0.10865757393881248, end
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-024724_bin_roi_segmented_outer-circle_-0.1087.png
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:02 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:38:02 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:02 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:02 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\4757.png, Label: NG
+2024-06-14 22:38:02 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:02 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:02 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:02 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:02 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:02 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:02 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:02 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:02 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-025987_bin.png
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:02 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:02 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:02 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:02 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 609, y: 432, w: 408, h: 389
+2024-06-14 22:38:02 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-026075_bin-roi.png
+2024-06-14 22:38:02 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:02 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:02 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-039298_bin-roi-segmented.png
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:03 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:03 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-039378_bin-roi-segmented-boundary.png
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:03 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:03 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.0, score: 0.0, end
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-039418_bin_roi_segmented_inner-circle_0.0000.png
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:03 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:03 DEBUG: Object: CircleChecker, method: Analyze, circularity: 2.430423108387325, score: -0.4304231083873251, end
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-039428_bin_roi_segmented_outer-circle_-0.4304.png
+2024-06-14 22:38:03 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:03 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:38:03 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:03 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:03 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\4901.png, Label: NG
+2024-06-14 22:38:03 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:03 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:03 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:03 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:03 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:03 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:03 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:03 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:03 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:04 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:04 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-040737_bin.png
+2024-06-14 22:38:04 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:04 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:04 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:04 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:04 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 746, y: 427, w: 399, h: 390
+2024-06-14 22:38:04 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:04 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:04 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-040817_bin-roi.png
+2024-06-14 22:38:04 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:04 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:04 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-056877_bin-roi-segmented.png
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:05 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:05 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-057011_bin-roi-segmented-boundary.png
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:05 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:05 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.3546783608911091, score: 0.35467836089110905, end
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-057089_bin_roi_segmented_inner-circle_0.3547.png
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:05 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:05 DEBUG: Object: CircleChecker, method: Analyze, circularity: 3.5517096972568005, score: -1.5517096972568005, end
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-057121_bin_roi_segmented_outer-circle_-1.5517.png
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:05 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:38:05 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:05 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:05 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\4967.png, Label: NG
+2024-06-14 22:38:05 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:05 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:05 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:05 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:05 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:05 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:05 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:05 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:05 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-059371_bin.png
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:05 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:05 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:05 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:05 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 702, y: 418, w: 404, h: 394
+2024-06-14 22:38:05 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-059518_bin-roi.png
+2024-06-14 22:38:05 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:05 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:05 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-084026_bin-roi-segmented.png
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:08 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:08 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-084149_bin-roi-segmented-boundary.png
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:08 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:08 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.345785189292941, score: 0.345785189292941, end
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-084209_bin_roi_segmented_inner-circle_0.3458.png
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:08 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:08 DEBUG: Object: CircleChecker, method: Analyze, circularity: 3.486509432589989, score: -1.486509432589989, end
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-084239_bin_roi_segmented_outer-circle_-1.4865.png
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:08 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:38:08 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:08 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:08 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\4983.png, Label: NG
+2024-06-14 22:38:08 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:08 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:08 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:08 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:08 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:08 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:08 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:08 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:08 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-086001_bin.png
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:08 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:08 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:08 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:08 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 765, y: 416, w: 464, h: 459
+2024-06-14 22:38:08 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-086101_bin-roi.png
+2024-06-14 22:38:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:08 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:08 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-107208_bin-roi-segmented.png
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:10 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:10 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-107338_bin-roi-segmented-boundary.png
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:10 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:10 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.33531798982703764, score: 0.33531798982703764, end
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-107408_bin_roi_segmented_inner-circle_0.3353.png
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:10 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:10 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.324428888895071, score: -4.324428888895071, end
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-107427_bin_roi_segmented_outer-circle_-4.3244.png
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:10 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:38:10 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:10 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:10 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5071.png, Label: NG
+2024-06-14 22:38:10 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:10 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:10 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:10 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:10 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:10 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:10 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:10 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:10 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-108928_bin.png
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:10 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:10 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:10 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:10 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 772, y: 433, w: 416, h: 439
+2024-06-14 22:38:10 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-109008_bin-roi.png
+2024-06-14 22:38:10 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:10 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:10 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-127108_bin-roi-segmented.png
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:12 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:12 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-127327_bin-roi-segmented-boundary.png
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:12 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:12 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.7515436079049352, score: 0.7515436079049352, end
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-127397_bin_roi_segmented_inner-circle_0.7515.png
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:12 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:12 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.307475262644743, score: -4.307475262644743, end
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-127437_bin_roi_segmented_outer-circle_-4.3075.png
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:12 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:12 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:12 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5146.png, Label: Undefined
+2024-06-14 22:38:12 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:12 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:12 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:12 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:12 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:12 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:12 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:12 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:12 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-129238_bin.png
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:12 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:12 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:12 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:12 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 715, y: 477, w: 414, h: 436
+2024-06-14 22:38:12 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-129348_bin-roi.png
+2024-06-14 22:38:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:12 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:12 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-147816_bin-roi-segmented.png
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:14 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:14 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-147936_bin-roi-segmented-boundary.png
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:14 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:14 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.8242799498848369, score: 0.8242799498848369, end
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-148005_bin_roi_segmented_inner-circle_0.8243.png
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:14 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:14 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.276014628561501, score: -4.276014628561501, end
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-148026_bin_roi_segmented_outer-circle_-4.2760.png
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:14 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:14 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:14 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5211.png, Label: AG
+2024-06-14 22:38:14 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:14 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:14 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:14 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:14 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:14 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:14 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:14 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:14 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-149547_bin.png
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:14 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:14 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:14 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:14 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 580, y: 312, w: 416, h: 431
+2024-06-14 22:38:14 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-149631_bin-roi.png
+2024-06-14 22:38:14 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:14 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:14 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-166266_bin-roi-segmented.png
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:16 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:16 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-166377_bin-roi-segmented-boundary.png
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:16 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:16 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.7258940548195049, score: 0.7258940548195049, end
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-166437_bin_roi_segmented_inner-circle_0.7259.png
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:16 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:16 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.004944211933015, score: -5.004944211933015, end
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-166467_bin_roi_segmented_outer-circle_-5.0049.png
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:16 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:16 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:16 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5290.png, Label: Undefined
+2024-06-14 22:38:16 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:16 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:16 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:16 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:16 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:16 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:16 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:16 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:16 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-168109_bin.png
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:16 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:16 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:16 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:16 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 355, y: 376, w: 415, h: 441
+2024-06-14 22:38:16 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-168216_bin-roi.png
+2024-06-14 22:38:16 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:16 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:16 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-187544_bin-roi-segmented.png
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:18 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:18 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-187654_bin-roi-segmented-boundary.png
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:18 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:18 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.8566403834917631, score: 0.8566403834917631, end
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-187717_bin_roi_segmented_inner-circle_0.8566.png
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:18 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:18 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.622286708193381, score: -5.622286708193381, end
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-187737_bin_roi_segmented_outer-circle_-5.6223.png
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:18 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:18 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:18 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5451.png, Label: AG
+2024-06-14 22:38:18 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:18 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:18 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:18 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:18 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:18 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:18 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:18 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:18 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-189228_bin.png
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:18 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:18 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:18 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:18 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 479, y: 358, w: 622, h: 445
+2024-06-14 22:38:18 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-189318_bin-roi.png
+2024-06-14 22:38:18 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:18 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:18 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-214786_bin-roi-segmented.png
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:21 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:21 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-214930_bin-roi-segmented-boundary.png
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:21 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:21 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.35534875825929135, score: 0.35534875825929135, end
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-215012_bin_roi_segmented_inner-circle_0.3553.png
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:21 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:21 DEBUG: Object: CircleChecker, method: Analyze, circularity: 8.412826236325726, score: -6.412826236325726, end
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-215037_bin_roi_segmented_outer-circle_-6.4128.png
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:21 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:38:21 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:21 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:21 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5553.png, Label: NG
+2024-06-14 22:38:21 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:21 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:21 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:21 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:21 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:21 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:21 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:21 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:21 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-216547_bin.png
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:21 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:21 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:21 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:21 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 423, y: 306, w: 678, h: 520
+2024-06-14 22:38:21 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-216646_bin-roi.png
+2024-06-14 22:38:21 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:21 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:21 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-247995_bin-roi-segmented.png
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:24 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:24 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-248155_bin-roi-segmented-boundary.png
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:24 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:24 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.4934089755348708, score: 0.49340897553487073, end
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-248254_bin_roi_segmented_inner-circle_0.4934.png
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:24 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:24 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.7307571128424755, score: -4.7307571128424755, end
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-248304_bin_roi_segmented_outer-circle_-4.7308.png
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:24 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:24 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:24 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5655.png, Label: Undefined
+2024-06-14 22:38:24 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:24 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:24 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:24 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:24 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:24 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:24 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:24 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:24 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-249893_bin.png
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:24 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:24 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:24 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:24 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 760, y: 512, w: 407, h: 420
+2024-06-14 22:38:24 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:24 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:25 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-249973_bin-roi.png
+2024-06-14 22:38:25 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:25 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:25 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-265470_bin-roi-segmented.png
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:26 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:26 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-265592_bin-roi-segmented-boundary.png
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:26 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:26 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.19694224216607126, score: 0.19694224216607126, end
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-265638_bin_roi_segmented_inner-circle_0.1969.png
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:26 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:26 DEBUG: Object: CircleChecker, method: Analyze, circularity: 3.6628022455858535, score: -1.6628022455858535, end
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-265668_bin_roi_segmented_outer-circle_-1.6628.png
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:26 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:38:26 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:26 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:26 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5859.png, Label: NG
+2024-06-14 22:38:26 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:26 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:26 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:26 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:26 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:26 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:26 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:26 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:26 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-267326_bin.png
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:26 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:26 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:26 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:26 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 694, y: 380, w: 420, h: 429
+2024-06-14 22:38:26 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-267426_bin-roi.png
+2024-06-14 22:38:26 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:26 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:26 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-287439_bin-roi-segmented.png
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:28 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:28 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-287558_bin-roi-segmented-boundary.png
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:28 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:28 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.6228785434390153, score: 0.6228785434390153, end
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-287626_bin_roi_segmented_inner-circle_0.6229.png
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:28 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:28 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.841132720404547, score: -4.841132720404547, end
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-287648_bin_roi_segmented_outer-circle_-4.8411.png
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:28 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:28 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:28 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6063.png, Label: Undefined
+2024-06-14 22:38:28 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:28 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:28 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:28 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:28 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:28 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:28 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:28 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:28 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-289266_bin.png
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:28 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:28 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:28 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:28 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 556, y: 433, w: 478, h: 432
+2024-06-14 22:38:28 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-289366_bin-roi.png
+2024-06-14 22:38:28 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:28 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:28 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-309168_bin-roi-segmented.png
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:30 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:30 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-309303_bin-roi-segmented-boundary.png
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:30 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:30 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.8590330446705703, score: 0.8590330446705703, end
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-309360_bin_roi_segmented_inner-circle_0.8590.png
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:30 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:30 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.409277434450585, score: -4.409277434450585, end
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-309390_bin_roi_segmented_outer-circle_-4.4093.png
+2024-06-14 22:38:30 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:30 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:30 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:30 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6165.png, Label: AG
+2024-06-14 22:38:30 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:30 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:30 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:30 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:30 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:30 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:30 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:30 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:30 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:31 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:31 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-310938_bin.png
+2024-06-14 22:38:31 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:31 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:31 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:31 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:31 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 379, y: 344, w: 422, h: 429
+2024-06-14 22:38:31 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:31 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:31 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-311030_bin-roi.png
+2024-06-14 22:38:31 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:31 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:31 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-327999_bin-roi-segmented.png
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:32 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:32 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-328096_bin-roi-segmented-boundary.png
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:32 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:32 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.3607387845801689, score: 0.36073878458016884, end
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-328156_bin_roi_segmented_inner-circle_0.3607.png
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:32 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:32 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.153244378810512, score: -4.153244378810512, end
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-328185_bin_roi_segmented_outer-circle_-4.1532.png
+2024-06-14 22:38:32 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:32 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:38:32 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:32 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:32 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6267.png, Label: NG
+2024-06-14 22:38:32 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:32 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:32 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:32 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:32 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:32 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:32 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:32 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:32 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:33 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:33 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-330049_bin.png
+2024-06-14 22:38:33 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:33 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:33 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:33 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:33 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 379, y: 353, w: 429, h: 442
+2024-06-14 22:38:33 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:33 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:33 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-330139_bin-roi.png
+2024-06-14 22:38:33 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:33 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:33 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-347899_bin-roi-segmented.png
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:34 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:34 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-348011_bin-roi-segmented-boundary.png
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:34 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:34 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.9831456299719348, score: 0.9831456299719348, end
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-348061_bin_roi_segmented_inner-circle_0.9831.png
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:34 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:34 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.022052218440598, score: -5.022052218440598, end
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-348091_bin_roi_segmented_outer-circle_-5.0221.png
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:34 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:34 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:34 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6369.png, Label: AG
+2024-06-14 22:38:34 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:34 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:34 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:34 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:34 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:34 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:34 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:34 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:34 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-349548_bin.png
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:34 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:34 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:34 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:34 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 450, y: 402, w: 412, h: 414
+2024-06-14 22:38:34 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-349643_bin-roi.png
+2024-06-14 22:38:34 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:34 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:34 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-365966_bin-roi-segmented.png
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:36 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:36 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-366066_bin-roi-segmented-boundary.png
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:36 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:36 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.47246924833430287, score: 0.4724692483343029, end
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-366117_bin_roi_segmented_inner-circle_0.4725.png
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:36 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:36 DEBUG: Object: CircleChecker, method: Analyze, circularity: 5.102638412542308, score: -3.1026384125423077, end
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-366138_bin_roi_segmented_outer-circle_-3.1026.png
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:36 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:36 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:36 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6471.png, Label: Undefined
+2024-06-14 22:38:36 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:36 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:36 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:36 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:36 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:36 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:36 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:36 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:36 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-367710_bin.png
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:36 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:36 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:36 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:36 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 444, y: 425, w: 421, h: 426
+2024-06-14 22:38:36 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-367799_bin-roi.png
+2024-06-14 22:38:36 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:36 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:36 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-387677_bin-roi-segmented.png
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:38 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:38 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-387787_bin-roi-segmented-boundary.png
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:38 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:38 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.26793907435520986, score: 0.2679390743552099, end
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-387846_bin_roi_segmented_inner-circle_0.2679.png
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:38 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:38 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.344214317054949, score: -4.344214317054949, end
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-387866_bin_roi_segmented_outer-circle_-4.3442.png
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:38 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:38:38 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:38 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:38 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6573.png, Label: NG
+2024-06-14 22:38:38 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:38 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:38 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:38 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:38 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:38 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:38 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:38 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:38 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-389348_bin.png
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:38 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:38 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:38 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:38 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 521, y: 424, w: 406, h: 426
+2024-06-14 22:38:38 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-389435_bin-roi.png
+2024-06-14 22:38:38 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:38 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:38 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-404899_bin-roi-segmented.png
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:40 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:40 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-405009_bin-roi-segmented-boundary.png
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:40 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:40 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.7898483715436213, score: 0.7898483715436213, end
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-405069_bin_roi_segmented_inner-circle_0.7898.png
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:40 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:40 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.2462466782411905, score: -5.2462466782411905, end
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-405089_bin_roi_segmented_outer-circle_-5.2462.png
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:40 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:40 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:40 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6680.png, Label: Undefined
+2024-06-14 22:38:40 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:40 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:40 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:40 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:40 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:40 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:40 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:40 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:40 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-406671_bin.png
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:40 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:40 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:40 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:40 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 500, y: 342, w: 432, h: 442
+2024-06-14 22:38:40 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-406767_bin-roi.png
+2024-06-14 22:38:40 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:40 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:40 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-425121_bin-roi-segmented.png
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:42 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:42 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-425232_bin-roi-segmented-boundary.png
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:42 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:42 DEBUG: Object: CircleChecker, method: Analyze, circularity: 1.1253161719400846, score: 0.8746838280599154, end
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-425278_bin_roi_segmented_inner-circle_0.8747.png
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:42 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:42 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.534267851689851, score: -5.534267851689851, end
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-425307_bin_roi_segmented_outer-circle_-5.5343.png
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:42 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:42 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:42 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6812.png, Label: AG
+2024-06-14 22:38:42 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:42 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:42 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:42 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:42 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:42 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:42 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:42 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:42 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-426931_bin.png
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:42 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:42 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:42 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:42 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 527, y: 304, w: 602, h: 589
+2024-06-14 22:38:42 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-427034_bin-roi.png
+2024-06-14 22:38:42 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:42 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:42 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-459644_bin-roi-segmented.png
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:45 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:45 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-459813_bin-roi-segmented-boundary.png
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:45 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:45 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.6682633561708752, score: 0.6682633561708752, end
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-459892_bin_roi_segmented_inner-circle_0.6683.png
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:45 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:45 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.4150794029255245, score: -5.4150794029255245, end
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-459922_bin_roi_segmented_outer-circle_-5.4151.png
+2024-06-14 22:38:45 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:45 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:46 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:46 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6879.png, Label: Undefined
+2024-06-14 22:38:46 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:38:46 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:46 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:46 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:38:46 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:38:46 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:38:46 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:38:46 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:46 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:38:46 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:46 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-461289_bin.png
+2024-06-14 22:38:46 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:46 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:38:46 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:38:46 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:38:46 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 703, y: 400, w: 350, h: 351
+2024-06-14 22:38:46 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:38:46 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:46 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-461368_bin-roi.png
+2024-06-14 22:38:46 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:46 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:38:46 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-471517_bin-roi-segmented.png
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:47 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, start
+2024-06-14 22:38:47 DEBUG: Object: TipQCDetector, method: GetSegmentationBoundaries, end
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-471596_bin-roi-segmented-boundary.png
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:47 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:47 DEBUG: Object: CircleChecker, method: Analyze, circularity: 1.1749070645220143, score: 0.8250929354779857, end
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-471636_bin_roi_segmented_inner-circle_0.8251.png
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:47 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:38:47 DEBUG: Object: CircleChecker, method: Analyze, circularity: 8.574387060464334, score: -6.574387060464334, end
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-38-471656_bin_roi_segmented_outer-circle_-6.5744.png
+2024-06-14 22:38:47 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:38:47 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:47 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:47 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\965.png, Label: AG
+2024-06-14 22:38:47 DEBUG: Object: VisionWrapper, method: ExecuteTipQCClassification, end
+2024-06-14 22:38:47 DEBUG: Main end.
+2024-06-14 22:53:34 DEBUG: Main is starting
+2024-06-14 22:53:34 DEBUG: Object: VisionWrapper was created
+2024-06-14 22:53:34 DEBUG: Object: Playground was created
+2024-06-14 22:53:34 DEBUG: Object: ROIProcessor was created
+2024-06-14 22:53:34 DEBUG: Object: VisionCommon was created
+2024-06-14 22:53:34 DEBUG: Object: GreyProcessor was created
+2024-06-14 22:53:34 DEBUG: Object: TipQCDetector was created
+2024-06-14 22:53:34 DEBUG: Object: VisionCommon was created
+2024-06-14 22:53:34 DEBUG: Object: CircleChecker was created
+2024-06-14 22:53:34 DEBUG: Object: VisionCommon was created
+2024-06-14 22:53:34 DEBUG: Object: BoundaryProcessor was created
+2024-06-14 22:53:34 DEBUG: Object: FrameGrabber was created
+2024-06-14 22:53:37 DEBUG: Object: VisionWrapper, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:37 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:37 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:37 DEBUG: STREAM b'IDAT' 41 7826
+2024-06-14 22:53:37 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:37 DEBUG: STREAM b'IDAT' 41 7826
+2024-06-14 22:53:37 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:37 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:37 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:37 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:37 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-377160_bin.png
+2024-06-14 22:53:37 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours none, end
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: Execute, Result: No valid ROI found for this frame
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:37 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:37 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\44.png, Label: Undefined
+2024-06-14 22:53:37 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:37 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:37 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:37 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:37 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:37 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:37 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:37 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:37 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:37 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-378972_bin.png
+2024-06-14 22:53:37 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 586, y: 495, w: 399, h: 412
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:37 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:37 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-379082_bin-roi.png
+2024-06-14 22:53:37 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:37 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:37 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-398683_bin-roi-segmented.png
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:39 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:53:39 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-398970_bin-roi-segmented-boundary.png
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:39 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:39 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.1255199926319303, score: 0.12551999263193037, end
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-399036_bin_roi_segmented_inner-circle_0.1255.png
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:39 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:39 DEBUG: Object: CircleChecker, method: Analyze, circularity: 2.1258133222298112, score: -0.12581332222981123, end
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-399085_bin_roi_segmented_outer-circle_-0.1258.png
+2024-06-14 22:53:39 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:39 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:53:39 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:39 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:39 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\4752.png, Label: NG
+2024-06-14 22:53:39 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:39 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:39 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:39 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:39 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:39 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:39 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:39 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:39 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:40 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:40 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-401193_bin.png
+2024-06-14 22:53:40 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:40 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:40 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:40 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:40 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 610, y: 494, w: 399, h: 403
+2024-06-14 22:53:40 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:40 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:40 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-401369_bin-roi.png
+2024-06-14 22:53:40 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:40 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:40 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-418744_bin-roi-segmented.png
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:41 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:53:41 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-418834_bin-roi-segmented-boundary.png
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:41 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:41 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.13262144774198223, score: 0.13262144774198226, end
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-418882_bin_roi_segmented_inner-circle_0.1326.png
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:41 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:41 DEBUG: Object: CircleChecker, method: Analyze, circularity: 2.1086575739388125, score: -0.10865757393881248, end
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-418894_bin_roi_segmented_outer-circle_-0.1087.png
+2024-06-14 22:53:41 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:41 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:53:41 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:41 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:41 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\4757.png, Label: NG
+2024-06-14 22:53:41 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:41 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:41 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:41 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:41 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:41 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:41 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:41 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:41 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:42 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:42 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-420278_bin.png
+2024-06-14 22:53:42 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:42 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:42 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:42 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:42 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 609, y: 432, w: 408, h: 389
+2024-06-14 22:53:42 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:42 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:42 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-420372_bin-roi.png
+2024-06-14 22:53:42 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:42 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:42 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-437914_bin-roi-segmented.png
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:43 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:53:43 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-438037_bin-roi-segmented-boundary.png
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:43 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:43 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.0, score: 0.0, end
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-438107_bin_roi_segmented_inner-circle_0.0000.png
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:43 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:43 DEBUG: Object: CircleChecker, method: Analyze, circularity: 2.430423108387325, score: -0.4304231083873251, end
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-438137_bin_roi_segmented_outer-circle_-0.4304.png
+2024-06-14 22:53:43 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:43 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:53:43 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:43 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:43 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\4901.png, Label: NG
+2024-06-14 22:53:43 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:43 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:43 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:43 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:43 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:43 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:43 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:43 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:43 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:44 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:44 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-440325_bin.png
+2024-06-14 22:53:44 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:44 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:44 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:44 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:44 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 746, y: 427, w: 399, h: 390
+2024-06-14 22:53:44 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:44 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:44 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-440434_bin-roi.png
+2024-06-14 22:53:44 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:44 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:44 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-460117_bin-roi-segmented.png
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:46 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:53:46 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-460247_bin-roi-segmented-boundary.png
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:46 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:46 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.3546783608911091, score: 0.35467836089110905, end
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-460307_bin_roi_segmented_inner-circle_0.3547.png
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:46 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:46 DEBUG: Object: CircleChecker, method: Analyze, circularity: 3.5517096972568005, score: -1.5517096972568005, end
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-460348_bin_roi_segmented_outer-circle_-1.5517.png
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:46 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:53:46 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:46 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:46 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\4967.png, Label: NG
+2024-06-14 22:53:46 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:46 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:46 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:46 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:46 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:46 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:46 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:46 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:46 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-462340_bin.png
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:46 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:46 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:46 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:46 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 702, y: 418, w: 404, h: 394
+2024-06-14 22:53:46 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-462450_bin-roi.png
+2024-06-14 22:53:46 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:46 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:46 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-481845_bin-roi-segmented.png
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:48 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:53:48 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-481945_bin-roi-segmented-boundary.png
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:48 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:48 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.345785189292941, score: 0.345785189292941, end
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-482005_bin_roi_segmented_inner-circle_0.3458.png
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:48 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:48 DEBUG: Object: CircleChecker, method: Analyze, circularity: 3.486509432589989, score: -1.486509432589989, end
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-482024_bin_roi_segmented_outer-circle_-1.4865.png
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:48 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:53:48 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:48 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:48 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\4983.png, Label: NG
+2024-06-14 22:53:48 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:48 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:48 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:48 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:48 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:48 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:48 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:48 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:48 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-483538_bin.png
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:48 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:48 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:48 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:48 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 765, y: 416, w: 464, h: 459
+2024-06-14 22:53:48 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-483642_bin-roi.png
+2024-06-14 22:53:48 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:48 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:48 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-504229_bin-roi-segmented.png
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:50 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:53:50 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-504339_bin-roi-segmented-boundary.png
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:50 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:50 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.33531798982703764, score: 0.33531798982703764, end
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-504400_bin_roi_segmented_inner-circle_0.3353.png
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:50 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:50 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.324428888895071, score: -4.324428888895071, end
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-504430_bin_roi_segmented_outer-circle_-4.3244.png
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:50 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:53:50 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:50 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:50 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5071.png, Label: NG
+2024-06-14 22:53:50 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:50 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:50 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:50 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:50 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:50 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:50 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:50 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:50 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-505878_bin.png
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:50 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:50 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:50 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:50 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 772, y: 433, w: 416, h: 439
+2024-06-14 22:53:50 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-505957_bin-roi.png
+2024-06-14 22:53:50 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:50 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:50 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-524565_bin-roi-segmented.png
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:52 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:53:52 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-524664_bin-roi-segmented-boundary.png
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:52 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:52 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.7515436079049352, score: 0.7515436079049352, end
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-524714_bin_roi_segmented_inner-circle_0.7515.png
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:52 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:52 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.307475262644743, score: -4.307475262644743, end
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-524739_bin_roi_segmented_outer-circle_-4.3075.png
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:52 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:52 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:52 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5146.png, Label: Undefined
+2024-06-14 22:53:52 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:52 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:52 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:52 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:52 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:52 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:52 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:52 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:52 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-526375_bin.png
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:52 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:52 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:52 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:52 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 715, y: 477, w: 414, h: 436
+2024-06-14 22:53:52 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-526478_bin-roi.png
+2024-06-14 22:53:52 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:52 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:52 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-543394_bin-roi-segmented.png
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:54 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:53:54 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-543490_bin-roi-segmented-boundary.png
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:54 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:54 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.8242799498848369, score: 0.8242799498848369, end
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-543561_bin_roi_segmented_inner-circle_0.8243.png
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:54 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:54 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.276014628561501, score: -4.276014628561501, end
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-543581_bin_roi_segmented_outer-circle_-4.2760.png
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:54 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:54 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:54 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5211.png, Label: AG
+2024-06-14 22:53:54 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:54 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:54 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:54 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:54 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:54 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:54 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:54 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:54 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-544995_bin.png
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:54 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:54 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:54 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:54 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 580, y: 312, w: 416, h: 431
+2024-06-14 22:53:54 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-545078_bin-roi.png
+2024-06-14 22:53:54 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:54 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:54 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-563200_bin-roi-segmented.png
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:56 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:53:56 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-563304_bin-roi-segmented-boundary.png
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:56 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:56 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.7258940548195049, score: 0.7258940548195049, end
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-563364_bin_roi_segmented_inner-circle_0.7259.png
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:56 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:56 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.004944211933015, score: -5.004944211933015, end
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-563384_bin_roi_segmented_outer-circle_-5.0049.png
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:56 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:56 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:56 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5290.png, Label: Undefined
+2024-06-14 22:53:56 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:56 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:56 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:56 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:56 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:56 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:56 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:56 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:56 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-564950_bin.png
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:56 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:56 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:56 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:56 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 355, y: 376, w: 415, h: 441
+2024-06-14 22:53:56 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-565086_bin-roi.png
+2024-06-14 22:53:56 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:56 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:56 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-584861_bin-roi-segmented.png
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:58 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:53:58 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-584970_bin-roi-segmented-boundary.png
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:58 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:58 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.8566403834917631, score: 0.8566403834917631, end
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-585034_bin_roi_segmented_inner-circle_0.8566.png
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:58 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:53:58 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.622286708193381, score: -5.622286708193381, end
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-585064_bin_roi_segmented_outer-circle_-5.6223.png
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:58 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:58 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:53:58 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5451.png, Label: AG
+2024-06-14 22:53:58 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:53:58 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:58 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:58 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:53:58 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:53:58 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:53:58 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:53:58 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:53:58 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-586594_bin.png
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:58 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:53:58 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:53:58 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:53:58 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 479, y: 358, w: 622, h: 445
+2024-06-14 22:53:58 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-53-586684_bin-roi.png
+2024-06-14 22:53:58 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:53:58 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:53:58 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-011995_bin-roi-segmented.png
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:01 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:01 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-012134_bin-roi-segmented-boundary.png
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:01 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:01 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.35534875825929135, score: 0.35534875825929135, end
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-012224_bin_roi_segmented_inner-circle_0.3553.png
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:01 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:01 DEBUG: Object: CircleChecker, method: Analyze, circularity: 8.412826236325726, score: -6.412826236325726, end
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-012254_bin_roi_segmented_outer-circle_-6.4128.png
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:01 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:54:01 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:01 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:01 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5553.png, Label: NG
+2024-06-14 22:54:01 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:01 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:01 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:01 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:01 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:01 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:01 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:01 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:01 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-013724_bin.png
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:01 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:01 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:01 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:01 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 423, y: 306, w: 678, h: 520
+2024-06-14 22:54:01 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-013814_bin-roi.png
+2024-06-14 22:54:01 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:01 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:01 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-045577_bin-roi-segmented.png
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:04 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:04 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-045737_bin-roi-segmented-boundary.png
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:04 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:04 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.4934089755348708, score: 0.49340897553487073, end
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-045831_bin_roi_segmented_inner-circle_0.4934.png
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:04 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:04 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.7307571128424755, score: -4.7307571128424755, end
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-045865_bin_roi_segmented_outer-circle_-4.7308.png
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:04 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:04 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:04 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5655.png, Label: Undefined
+2024-06-14 22:54:04 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:04 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:04 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:04 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:04 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:04 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:04 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:04 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:04 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-047181_bin.png
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:04 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:04 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:04 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:04 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 760, y: 512, w: 407, h: 420
+2024-06-14 22:54:04 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-047267_bin-roi.png
+2024-06-14 22:54:04 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:04 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:04 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-063305_bin-roi-segmented.png
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:06 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:06 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-063428_bin-roi-segmented-boundary.png
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:06 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:06 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.19694224216607126, score: 0.19694224216607126, end
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-063487_bin_roi_segmented_inner-circle_0.1969.png
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:06 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:06 DEBUG: Object: CircleChecker, method: Analyze, circularity: 3.6628022455858535, score: -1.6628022455858535, end
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-063527_bin_roi_segmented_outer-circle_-1.6628.png
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:06 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:54:06 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:06 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:06 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\5859.png, Label: NG
+2024-06-14 22:54:06 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:06 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:06 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:06 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:06 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:06 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:06 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:06 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:06 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-065086_bin.png
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:06 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:06 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:06 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:06 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 694, y: 380, w: 420, h: 429
+2024-06-14 22:54:06 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-065183_bin-roi.png
+2024-06-14 22:54:06 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:06 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:06 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-087100_bin-roi-segmented.png
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:08 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:08 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-087229_bin-roi-segmented-boundary.png
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:08 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:08 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.6228785434390153, score: 0.6228785434390153, end
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-087289_bin_roi_segmented_inner-circle_0.6229.png
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:08 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:08 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.841132720404547, score: -4.841132720404547, end
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-087334_bin_roi_segmented_outer-circle_-4.8411.png
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:08 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:08 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:08 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6063.png, Label: Undefined
+2024-06-14 22:54:08 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:08 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:08 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:08 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:08 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:08 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:08 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:08 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:08 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-089204_bin.png
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:08 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:08 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:08 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:08 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 556, y: 433, w: 478, h: 432
+2024-06-14 22:54:08 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-089305_bin-roi.png
+2024-06-14 22:54:08 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:08 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:08 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-110015_bin-roi-segmented.png
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:11 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:11 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-110124_bin-roi-segmented-boundary.png
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:11 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:11 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.8590330446705703, score: 0.8590330446705703, end
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-110194_bin_roi_segmented_inner-circle_0.8590.png
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:11 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:11 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.409277434450585, score: -4.409277434450585, end
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-110223_bin_roi_segmented_outer-circle_-4.4093.png
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:11 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:11 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:11 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6165.png, Label: AG
+2024-06-14 22:54:11 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:11 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:11 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:11 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:11 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:11 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:11 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:11 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:11 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-111685_bin.png
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:11 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:11 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:11 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:11 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 379, y: 344, w: 422, h: 429
+2024-06-14 22:54:11 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-111788_bin-roi.png
+2024-06-14 22:54:11 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:11 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:11 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-127828_bin-roi-segmented.png
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:12 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:12 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-127941_bin-roi-segmented-boundary.png
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:12 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:12 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.3607387845801689, score: 0.36073878458016884, end
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-128001_bin_roi_segmented_inner-circle_0.3607.png
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:12 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:12 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.153244378810512, score: -4.153244378810512, end
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-128031_bin_roi_segmented_outer-circle_-4.1532.png
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:12 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:54:12 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:12 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:12 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6267.png, Label: NG
+2024-06-14 22:54:12 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:12 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:12 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:12 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:12 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:12 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:12 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:12 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:12 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-129586_bin.png
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:12 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:12 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:12 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:12 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 379, y: 353, w: 429, h: 442
+2024-06-14 22:54:12 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-129681_bin-roi.png
+2024-06-14 22:54:12 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:12 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:12 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-148855_bin-roi-segmented.png
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:14 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:14 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-148975_bin-roi-segmented-boundary.png
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:14 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:14 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.9831456299719348, score: 0.9831456299719348, end
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-149025_bin_roi_segmented_inner-circle_0.9831.png
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:14 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:14 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.022052218440598, score: -5.022052218440598, end
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-149056_bin_roi_segmented_outer-circle_-5.0221.png
+2024-06-14 22:54:14 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:14 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:14 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:14 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6369.png, Label: AG
+2024-06-14 22:54:14 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:14 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:14 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:14 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:14 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:14 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:14 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:14 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:14 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:15 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:15 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-150737_bin.png
+2024-06-14 22:54:15 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:15 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:15 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:15 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:15 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 450, y: 402, w: 412, h: 414
+2024-06-14 22:54:15 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:15 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:15 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-150837_bin-roi.png
+2024-06-14 22:54:15 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:15 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:15 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-169447_bin-roi-segmented.png
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:16 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:16 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-169597_bin-roi-segmented-boundary.png
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:16 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:16 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.47246924833430287, score: 0.4724692483343029, end
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-169674_bin_roi_segmented_inner-circle_0.4725.png
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:16 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:16 DEBUG: Object: CircleChecker, method: Analyze, circularity: 5.102638412542308, score: -3.1026384125423077, end
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-169704_bin_roi_segmented_outer-circle_-3.1026.png
+2024-06-14 22:54:16 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:16 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:16 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:16 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6471.png, Label: Undefined
+2024-06-14 22:54:16 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:16 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:16 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:16 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:16 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:17 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:17 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:17 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:17 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:17 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:17 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-171242_bin.png
+2024-06-14 22:54:17 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:17 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:17 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:17 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:17 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 444, y: 425, w: 421, h: 426
+2024-06-14 22:54:17 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:17 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:17 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-171331_bin-roi.png
+2024-06-14 22:54:17 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:17 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:17 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-187602_bin-roi-segmented.png
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:18 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:18 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-187724_bin-roi-segmented-boundary.png
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:18 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:18 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.26793907435520986, score: 0.2679390743552099, end
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-187781_bin_roi_segmented_inner-circle_0.2679.png
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:18 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:18 DEBUG: Object: CircleChecker, method: Analyze, circularity: 6.344214317054949, score: -4.344214317054949, end
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-187805_bin_roi_segmented_outer-circle_-4.3442.png
+2024-06-14 22:54:18 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:18 DEBUG: Object: TipQCDetector, method: FinalClassifier, Label: NG,  end
+2024-06-14 22:54:18 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:18 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:18 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6573.png, Label: NG
+2024-06-14 22:54:18 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:18 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:18 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:18 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:18 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:18 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:18 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:18 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:18 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:19 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:19 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-190514_bin.png
+2024-06-14 22:54:19 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:19 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:19 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:19 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:19 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 521, y: 424, w: 406, h: 426
+2024-06-14 22:54:19 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:19 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:19 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-190680_bin-roi.png
+2024-06-14 22:54:19 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:19 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:19 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-222076_bin-roi-segmented.png
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:22 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:22 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-222196_bin-roi-segmented-boundary.png
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:22 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:22 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.7898483715436213, score: 0.7898483715436213, end
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-222266_bin_roi_segmented_inner-circle_0.7898.png
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:22 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:22 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.2462466782411905, score: -5.2462466782411905, end
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-222296_bin_roi_segmented_outer-circle_-5.2462.png
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:22 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:22 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:22 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6680.png, Label: Undefined
+2024-06-14 22:54:22 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:22 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:22 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:22 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:22 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:22 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:22 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:22 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:22 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-224314_bin.png
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:22 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:22 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:22 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:22 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 500, y: 342, w: 432, h: 442
+2024-06-14 22:54:22 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-224424_bin-roi.png
+2024-06-14 22:54:22 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:22 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:22 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-251734_bin-roi-segmented.png
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:25 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:25 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-251894_bin-roi-segmented-boundary.png
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:25 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:25 DEBUG: Object: CircleChecker, method: Analyze, circularity: 1.1253161719400846, score: 0.8746838280599154, end
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-251964_bin_roi_segmented_inner-circle_0.8747.png
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:25 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:25 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.534267851689851, score: -5.534267851689851, end
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-251994_bin_roi_segmented_outer-circle_-5.5343.png
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:25 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:25 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:25 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6812.png, Label: AG
+2024-06-14 22:54:25 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:25 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:25 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:25 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:25 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:25 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:25 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:25 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:25 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-253733_bin.png
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:25 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:25 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:25 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:25 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 527, y: 304, w: 602, h: 589
+2024-06-14 22:54:25 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-253873_bin-roi.png
+2024-06-14 22:54:25 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:25 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:25 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-289594_bin-roi-segmented.png
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:28 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:28 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-289796_bin-roi-segmented-boundary.png
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:28 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:28 DEBUG: Object: CircleChecker, method: Analyze, circularity: 0.6682633561708752, score: 0.6682633561708752, end
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-289895_bin_roi_segmented_inner-circle_0.6683.png
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:28 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:28 DEBUG: Object: CircleChecker, method: Analyze, circularity: 7.4150794029255245, score: -5.4150794029255245, end
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-289934_bin_roi_segmented_outer-circle_-5.4151.png
+2024-06-14 22:54:28 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:28 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:29 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:29 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\6879.png, Label: Undefined
+2024-06-14 22:54:29 DEBUG: Object: FrameGrabber, method: GrabFrame, start
+2024-06-14 22:54:29 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:29 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:29 DEBUG: STREAM b'IHDR' 16 13
+2024-06-14 22:54:29 DEBUG: STREAM b'IDAT' 41 8192
+2024-06-14 22:54:29 DEBUG: Error closing: Operation on closed image
+2024-06-14 22:54:29 DEBUG: Object: FrameGrabber, method: GrabFrame, end
+2024-06-14 22:54:29 DEBUG: Object: Playground, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:29 DEBUG: Object: ROIProcessor, method: Execute, start
+2024-06-14 22:54:29 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:29 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-291957_bin.png
+2024-06-14 22:54:29 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:29 DEBUG: Object: ROIProcessor, method: get_largest_contour, start
+2024-06-14 22:54:29 DEBUG: Object: ROIProcessor, method: get_largest_contour, contours exist, end
+2024-06-14 22:54:29 DEBUG: Object: ROIProcessor, method: get_bounding_box, start
+2024-06-14 22:54:29 DEBUG: Object: ROIProcessor, method: get_bounding_box, Result x: 703, y: 400, w: 350, h: 351
+2024-06-14 22:54:29 DEBUG: Object: ROIProcessor, method: get_bounding_box, end
+2024-06-14 22:54:29 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:29 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-292056_bin-roi.png
+2024-06-14 22:54:29 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:29 DEBUG: Object: ROIProcessor, method: Execute, end
+2024-06-14 22:54:29 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, start
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-309723_bin-roi-segmented.png
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:30 DEBUG: Object: BoundaryProcessor, method: Execute, start
+2024-06-14 22:54:30 DEBUG: Object: BoundaryProcessor, method: Execute, end
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-309835_bin-roi-segmented-boundary.png
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:30 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:30 DEBUG: Object: CircleChecker, method: Analyze, circularity: 1.1749070645220143, score: 0.8250929354779857, end
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-309875_bin_roi_segmented_inner-circle_0.8251.png
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:30 DEBUG: Object: CircleChecker, method: Analyze, start
+2024-06-14 22:54:30 DEBUG: Object: CircleChecker, method: Analyze, circularity: 8.574387060464334, score: -6.574387060464334, end
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, start
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, State: Image saved as image_dump\2024-06-14_22-54-309908_bin_roi_segmented_outer-circle_-6.5744.png
+2024-06-14 22:54:30 DEBUG: Object: VisionCommon, method: SaveImage, end
+2024-06-14 22:54:30 DEBUG: Object: TipQCDetector, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:30 DEBUG: Object: Playground, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:30 INFO: Object: VisionWrapper, method: PrintResult, Result, Image: dataset\965.png, Label: AG
+2024-06-14 22:54:30 DEBUG: Object: VisionWrapper, method: ExecuteTipQCClassification, end
+2024-06-14 22:54:30 DEBUG: Main end.

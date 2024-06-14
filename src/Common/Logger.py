@@ -2,7 +2,6 @@ import logging
 import os
 
 class Logger:
-    
     @staticmethod
     def setup_logging():
         logging.basicConfig(

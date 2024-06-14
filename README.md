@@ -1,5 +1,10 @@
 # FastConsumableQC.Vision
 
+## Problem Definition
+The repository addresses critical challenges in the production of tips through injection molding. With a high rejection rate and manual inspection prone to errors, there is a pressing need for an automated solution. This repository hosts an in-house developed vision-based inspection system designed to enhance production efficiency by accurately identifying defective tips. The system aims to mitigate issues such as false positives and negatives, ensuring consistent quality while improving overall yield rates.
+
+Upon examining sample images of tips, several critical issues have been identified. These issues include inconsistent tip geometry, such as irregularities in the shape of the tip end. Additionally, there are instances of surface defects and anomalies that compromise the integrity of the tips. Furthermore. These visual discrepancies highlight the urgent need for an automated inspection solution to ensure consistent quality and reliability of produced tips, reducing rejection rates and enhancing overall production efficiency.
+
 ## Requirements
 - Python 3.11
 - skimage: `pip install scikit-image`
@@ -22,6 +27,7 @@ FastConsumableQC.Vision
     ├── HighLevelProcessor
         └── TipQCDetector.py
     ├── LowLevelProcessor
+        ├── BoundaryProcessor.py
         ├── GreyProcessor.py
         └── RoiProcessor.py
     ├── Utils
@@ -58,20 +64,20 @@ FastConsumableQC.Vision
 
 ### Highlevel Overview
 - Image processing pipeline:
-    - Raw image => Binary image => ROI (of raw image) => Segmented image (3 pixel values) => Classification
+    - Raw image => Binary image => ROI => Segmented image (3 parts) => Image Boundaries => Classification
 
 ### Dumped image (Class: GO)
-- Raw image (1600x1200) => Binary image (1600x1200) => ROI image (350x351 => Vary for each images) => Segmented image (350x351 => Vary for each images)
+- Raw image => Binary image => ROI image => Segmented image => Image Boundaries
 
   <img src="assets/965.png" alt="Raw image" width="170" /> <img src="assets/965_bin.png" alt="Raw image" width="170" /> <img src="assets/965_bin_ROI.png" alt="Raw image" width="120" /> <img src="assets/965_bin_ROI_segmented.png" alt="Raw image" width="120" /> <img src="assets/965_bin_ROI_segmented_boundary.png" alt="Raw image" width="120" />
 
 ### Dumped image (Class: Arguably Good)
-- Raw image (1600x1200) => Binary image (1600x1200) => ROI image (350x351 => Vary for each images) => Segmented image (350x351 => Vary for each images)
+- Raw image => Binary image => ROI image => Segmented image => Image Boundaries
 
   <img src="assets/6812.png" alt="Raw image" width="170" /> <img src="assets/6812_bin.png" alt="Raw image" width="170" /> <img src="assets/6812_bin_ROI.png" alt="Raw image" width="120" /> <img src="assets/6812_bin_ROI_segmented.png" alt="Raw image" width="120" /> <img src="assets/6812_bin_ROI_segmented_boundary.png" alt="Raw image" width="120" />
 
 ### Dumped image (Class: NG)
-- Raw image (1600x1200) => Binary image (1600x1200) => ROI image (350x351 => Vary for each images) => Segmented image (350x351 => Vary for each images)
+- Raw image => Binary image => ROI image => Segmented image => Image Boundaries
 
   <img src="assets/6573.png" alt="Raw image" width="170" /> <img src="assets/6573_bin.png" alt="Raw image" width="170" /> <img src="assets/6573_bin_ROI.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_ROI_segmented.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_ROI_segmented_boundary.png" alt="Raw image" width="120" />
 

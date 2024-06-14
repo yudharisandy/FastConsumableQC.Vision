@@ -7,6 +7,7 @@ from Common.VisionCommon import VisionCommon
 from LowLevelAnalyzer.CircleChecker import CircleChecker
 import logging
 from Common.Label import Label
+from LowLevelProcessor.BoundaryProcessor import BoundaryProcessor
 
 class TipQCDetector:
     def __init__(self, isTrainTipQC):
@@ -15,6 +16,7 @@ class TipQCDetector:
         
         self.visionCommon = VisionCommon()
         self.circleChecker = CircleChecker()
+        self.boundaryProcessor = BoundaryProcessor()
         
         if(isTrainTipQC):
             self.classifier = RandomForestClassifier()
@@ -71,7 +73,7 @@ class TipQCDetector:
         imgSegmented = future.predict_segmenter(features, self.classifier)
         self.visionCommon.SaveImage(imgSegmented, 'bin-roi-segmented', segmentation=True)
         
-        imgBoundary = self.GetSegmentationBoundaries(imgSegmented)
+        imgBoundary = self.boundaryProcessor.Execute(imgSegmented)
         self.visionCommon.SaveImage(imgBoundary, 'bin-roi-segmented-boundary', boundary=True)
         
         # Inner circle analysis
@@ -97,13 +99,3 @@ class TipQCDetector:
         elif scoreInnerCircle > 0.8:
             return Label.AG
         return Label.Undefined
-    
-    
-    def GetSegmentationBoundaries(self, imgSegmented):
-        self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.GetSegmentationBoundaries.__name__}, start")
-        
-        imgBoundary = segmentation.mark_boundaries(np.zeros((imgSegmented.shape[0], imgSegmented.shape[1]), dtype=np.uint8), imgSegmented, mode='inner')
-        
-        self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.GetSegmentationBoundaries.__name__}, end")
-        
-        return imgBoundary

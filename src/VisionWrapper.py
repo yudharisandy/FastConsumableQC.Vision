@@ -59,6 +59,7 @@ class VisionWrapper:
 
         self.PrintResult(labelImage, imagePath)
     
+    
     def PrintResult(self, label , imagePath=None):
         if imagePath is not None:
             print(f"Image: {imagePath} | Label: {label}")
