@@ -52,7 +52,7 @@
 
 - Binary image (1600x1200)
 
-<img src="assets/6812.png" alt="Raw image" width="400" />
+<img src="assets/6812_bin.png" alt="Raw image" width="400" />
 
 - ROI image (350x351 => Vary for each images)
 
