@@ -56,11 +56,11 @@ FastConsumableQC.Vision
     ```
 - Example for inferencing by inputing a camera stream.
 
-    ```result = visionWrapper.ExecuteTipQCClassification()```
-- The classification result will be printed in the terminal.   
+    ```result = visionWrapper.ExecuteTipQCClassification()```  
 
 ## Result
-- The dumped images will be stored inside `/FastConsumableQC.Vision/image_dump/` directory.
+- The classification result will be printed in the terminal. 
+- The dumped image logs will be stored inside `/FastConsumableQC.Vision/image_dump/` directory.
 
 ### Highlevel Overview
 - Image processing pipeline:
