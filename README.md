@@ -1,8 +1,6 @@
 # FastConsumableQC.Vision
 
 ## Problem Definition
-The repository addresses critical challenges in the production of tips through injection molding. With a high rejection rate and manual inspection prone to errors, there is a pressing need for an automated solution. This repository hosts an in-house developed vision-based inspection system designed to enhance production efficiency by accurately identifying defective tips. The system aims to mitigate issues such as false positives and negatives, ensuring consistent quality while improving overall yield rates.
-
 Upon examining sample images of tips, several critical issues have been identified. These issues include inconsistent tip geometry, such as irregularities in the shape of the tip end. Additionally, there are instances of surface defects and anomalies that compromise the integrity of the tips. Furthermore. These visual discrepancies highlight the urgent need for an automated inspection solution to ensure consistent quality and reliability of produced tips, reducing rejection rates and enhancing overall production efficiency.
 
 ## Requirements
@@ -82,4 +80,16 @@ FastConsumableQC.Vision
   <img src="assets/6573.png" alt="Raw image" width="170" /> <img src="assets/6573_bin.png" alt="Raw image" width="170" /> <img src="assets/6573_bin_ROI.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_ROI_segmented.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_ROI_segmented_boundary.png" alt="Raw image" width="120" />
 
 ### Final Classification Result
-- Final decision is based on segmented image.
+- Final decision is analyzed based on the segmented image boundaries.
+- TODO: explain the scheme
+
+## Plan to Improve
+- The following scheme possible could improve the robustness, escpecially when the objective is to improve the precision (low false positive) but keep maintaining good accuracy (acceptable false negative rate).
+
+![Proposed Scheme](assets/ProposedScheme.png)
+
+## References
+- https://scikit-image.org/docs/stable/auto_examples/segmentation/plot_trainable_segmentation.html
+- https://scikit-image.org/docs/stable/api/skimage.future.html#skimage.future.fit_segmenter
+- https://scikit-image.org/docs/stable/api/skimage.feature.html
+- https://scikit-image.org/docs/stable/api/skimage.segmentation.html
