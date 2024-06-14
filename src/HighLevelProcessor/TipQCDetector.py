@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 from functools import partial
-from skimage import feature, future
+from skimage import feature, future, segmentation
 from sklearn.ensemble import RandomForestClassifier
 from Common.VisionCommon import VisionCommon
 from LowLevelAnalyzer.CircleChecker import CircleChecker
@@ -63,13 +63,16 @@ class TipQCDetector:
         self.visionCommon.SaveImage(imgSegmented, 'bin-roi-trainSegmented', segmentation=True)
         self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.Train.__name__}, end")
     
+    
     def ExecuteTipQCClassification(self, roiImage):
         self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.ExecuteTipQCClassification.__name__}, start")
         
         features = self.features_func(roiImage)
         imgSegmented = future.predict_segmenter(features, self.classifier)
-        
         self.visionCommon.SaveImage(imgSegmented, 'bin-roi-segmented', segmentation=True)
+        
+        imgBoundary = self.GetSegmentationBoundaries(imgSegmented)
+        self.visionCommon.SaveImage(imgBoundary, 'bin-roi-segmented-boundary', segmentation=True)
         
         # Inner circle analysis
         innerCircleRegion = imgSegmented == 3
@@ -86,6 +89,7 @@ class TipQCDetector:
         self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.ExecuteTipQCClassification.__name__}, end")
         return label
     
+    
     def FinalClassifier(self, scoreInnerCircle, scoreOuterCircle):
         if scoreInnerCircle < 0.4:
             self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.FinalClassifier.__name__}, Label: {Label.NG.name},  end")
@@ -93,3 +97,13 @@ class TipQCDetector:
         elif scoreInnerCircle > 0.8:
             return Label.AG
         return Label.Undefined
+    
+    
+    def GetSegmentationBoundaries(self, imgSegmented):
+        self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.GetSegmentationBoundaries.__name__}, start")
+        
+        imgBoundary = segmentation.mark_boundaries(np.zeros((imgSegmented.shape[0], imgSegmented.shape[1]), dtype=np.uint8), imgSegmented, mode='inner')
+        
+        self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.GetSegmentationBoundaries.__name__}, end")
+        
+        return imgBoundary
