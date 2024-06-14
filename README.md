@@ -31,17 +31,17 @@
 ### Dumped image (Class: GO)
 - Raw image (1600x1200) => Binary image (1600x1200) => ROI image (350x351 => Vary for each images) => Segmented image (350x351 => Vary for each images)
 
-  <img src="assets/965.png" alt="Raw image" width="200" /> => <img src="assets/965_bin.png" alt="Raw image" width="200" /> => <img src="assets/965_bin_ROI.png" alt="Raw image" width="150" /> => <img src="assets/965_bin_ROI_segmented.png" alt="Raw image" width="150" />
+  <img src="assets/965.png" alt="Raw image" width="200" /> <img src="assets/965_bin.png" alt="Raw image" width="200" /> <img src="assets/965_bin_ROI.png" alt="Raw image" width="150" /> <img src="assets/965_bin_ROI_segmented.png" alt="Raw image" width="150" />
 
 ### Dumped image (Class: Arguably Good)
 - Raw image (1600x1200) => Binary image (1600x1200) => ROI image (350x351 => Vary for each images) => Segmented image (350x351 => Vary for each images)
 
-  <img src="assets/6812.png" alt="Raw image" width="200" /> => <img src="assets/6812_bin.png" alt="Raw image" width="200" /> => <img src="assets/6812_bin_ROI.png" alt="Raw image" width="150" /> => <img src="assets/6812_bin_ROI_segmented.png" alt="Raw image" width="150" />
+  <img src="assets/6812.png" alt="Raw image" width="200" /> <img src="assets/6812_bin.png" alt="Raw image" width="200" /> <img src="assets/6812_bin_ROI.png" alt="Raw image" width="150" /> <img src="assets/6812_bin_ROI_segmented.png" alt="Raw image" width="150" />
 
 ### Dumped image (Class: NG)
 - Raw image (1600x1200) => Binary image (1600x1200) => ROI image (350x351 => Vary for each images) => Segmented image (350x351 => Vary for each images)
 
-  <img src="assets/6573.png" alt="Raw image" width="200" /> => <img src="assets/6573_bin.png" alt="Raw image" width="200" /> => <img src="assets/6573_bin_ROI.png" alt="Raw image" width="150" /> => <img src="assets/6573_bin_ROI_segmented.png" alt="Raw image" width="150" />
+  <img src="assets/6573.png" alt="Raw image" width="200" /> <img src="assets/6573_bin.png" alt="Raw image" width="200" /> <img src="assets/6573_bin_ROI.png" alt="Raw image" width="150" /> <img src="assets/6573_bin_ROI_segmented.png" alt="Raw image" width="150" />
 
 ### Final Classification Result
 - Final decision is based on segmented image.
