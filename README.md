@@ -31,7 +31,7 @@
 ### Dumped image (Class: GO)
 - Raw image (1600x1200)
 
-<img src="assets/965.png" alt="Raw image" width="400" />
+<img src="assets/965.png" alt="Raw image" width="400" /> <img src="assets/965_bin.png" alt="Raw image" width="400" />
 
 - Binary image (1600x1200)
 
