@@ -49,6 +49,7 @@ FastConsumableQC.Vision
     result = visionWrapper.ExecuteTipQCClassification(imagePath)
     ```
 - Example for inferencing by inputing a camera stream.
+
     ```result = visionWrapper.ExecuteTipQCClassification()```
 - The classification result will be printed in the terminal.
   
