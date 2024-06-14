@@ -14,7 +14,7 @@ FastConsumableQC.Vision
 ├── log
 ├── models
 ├── test_images
-├── src
+└── src
     ├── Common
         ├── Label.py
         ├── Logger.py
@@ -38,21 +38,23 @@ FastConsumableQC.Vision
 ## How to use:
 - You could input a single image, camera stream, or a folder that contains many images by modifying some parts.
 - Example for inferencing by inputing a folder.
-    - Modify main.py:
-        - `dataset_folder = 'dataset'`
-        - `tipQCClassificationFolderResult = visionWrapper.ExecuteTipQClassificationOnFolder(dataset_folder)`
+    ```
+    folderPath = 'dataset'
+    result = visionWrapper.ExecuteTipQClassificationOnFolder(folderPath)
+    ```
 - Example for inferencing by inputing a single image.
-    - Modify main.py:
-        - `tipQCClassificationResult = visionWrapper.ExecuteTipQCClassification()`
-    - Modify FrameGrabber.py
-        - `self.imageFileName = 'image_name.png'`
-        - `self.imagePath = os.path.join('your_folder', self.imageFileName)`
+    ```
+    folderPath = 'dataset'
+    imagePath = os.path.join(folderPath, '965.png')
+    result = visionWrapper.ExecuteTipQCClassification(imagePath)
+    ```
 - Example for inferencing by inputing a camera stream.
-    - Modify main.py:
-        - `tipQCClassificationResult = visionWrapper.ExecuteTipQCClassification()`
-    - Modify FrameGrabber.py
-        - `self.imagePath = None`
+    ```result = visionWrapper.ExecuteTipQCClassification()```
 - The classification result will be printed in the terminal.
+  
+    
+    # # Execute many images in a folder
+    
 
 ## Result
 - The dumped images will be stored inside `/FastConsumableQC.Vision/image_dump/` directory.
