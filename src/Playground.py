@@ -1,6 +1,6 @@
-from BasicImageProcessor.RoiProcessor import ROIProcessor
-from TipQCDetection.TipQCDetection import TipQCDetector
-from FrameGrabber import FrameGrabber
+from LowLevelProcessor.RoiProcessor import ROIProcessor
+from HighLevelProcessor.TipQCDetector import TipQCDetector
+from Utils.FrameGrabber import FrameGrabber
 import logging
 
 class Playground:

@@ -14,7 +14,7 @@ class FrameGrabber:
         
         # Modify these variables to run whether on an image or using camera stream
         self.imageFileName = '6812.png'
-        self.imagePath = os.path.join('dataset', self.imageFileName) # Set to none to use camera stream
+        self.imagePath = os.path.join('dataset', self.imageFileName) # Set self.imagePath to None for using camera stream
         # self.imagePath = None 
 
     def GrabFrame(self):

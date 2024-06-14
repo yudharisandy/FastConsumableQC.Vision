@@ -3,26 +3,33 @@
 ## Requirements
 - Python 3.11
 - skimage: `pip install scikit-image`
-- OpenCV2: `pip install opencv-python`
-- Other needed libraries will be installed automatically during the installation of those two libraries.
-- Furthermore, in my case, some are installed automatically by anaconda once I created a new environment. So it might be not always same.
+- OpenCV: `pip install opencv-python`
 
 ## Run the code:
 - Set active directory to `/FastConsumableQC.Vision/src/`
 - `python main.py`
 
 ## How to use:
-- You could input whether a single image or a folder that contains many images by modifying main.py
-- Example for inferencing by inputing a folder whcih contains many images
-    - `isFolder = True`
-    - `dataset = 'dataset`
-- Example for inferencing by inputing a single image
-    - `isFolder = False`
-    - `dataset = 'test_image\\5451.png'`
-- The classification result will be printed in the terminal
+- You could input a single image, camera stream, or a folder that contains many images by modifying some parts.
+- Example for inferencing by inputing a folder.
+    - Modify main.py:
+        - `dataset_folder = 'dataset'`
+        - `tipQCClassificationFolderResult = visionWrapper.ExecuteTipQClassificationOnFolder(dataset_folder)`
+- Example for inferencing by inputing a single image.
+    - Modify main.py:
+        - `tipQCClassificationResult = visionWrapper.ExecuteTipQCClassification()`
+    - Modify FrameGrabber.py
+        - `self.imageFileName = 'image_name.png'`
+        - `self.imagePath = os.path.join('your_folder', self.imageFileName)`
+- Example for inferencing by inputing a camera stream.
+    - Modify main.py:
+        - `tipQCClassificationResult = visionWrapper.ExecuteTipQCClassification()`
+    - Modify FrameGrabber.py
+        - `self.imagePath = None`
+- The classification result will be printed in the terminal.
 
 ## Result
-- The dumped images will be store inside `/FastConsumableQC.Vision/image_dump/` directory.
+- The dumped images will be stored inside `/FastConsumableQC.Vision/image_dump/` directory.
 
 ### Highlevel Overview
 - Image processing pipeline:
@@ -45,4 +52,3 @@
 
 ### Final Classification Result
 - Final decision is based on segmented image.
-- 

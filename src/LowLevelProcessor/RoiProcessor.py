@@ -1,9 +1,10 @@
 import numpy as np
-from skimage import feature, color, filters, morphology
+from skimage import feature, filters, morphology
 from functools import partial
 import cv2
 import logging
-from BasicImageProcessor.VisionCommon import VisionCommon
+from Common.VisionCommon import VisionCommon
+from LowLevelProcessor.GreyProcessor import GreyProcessor
 
 class ROIProcessor:
   def __init__(self):
@@ -12,6 +13,8 @@ class ROIProcessor:
 
     self.roiImage = None
     self.visionCommon = VisionCommon()
+    self.greyProcessor = GreyProcessor()
+    
     sigma_min = 1
     sigma_max = 16
     self.features_func = partial(
@@ -48,7 +51,7 @@ class ROIProcessor:
   def Execute(self, rawImage):
     self.logger.debug(f"Object: {ROIProcessor.__name__}, method: {ROIProcessor.Execute.__name__}, start")
 
-    gray_img = color.rgb2gray(rawImage)
+    gray_img = self.greyProcessor.Execute(rawImage)
 
     thresh = filters.threshold_otsu(gray_img)
     binary_img = gray_img > thresh
@@ -67,7 +70,7 @@ class ROIProcessor:
         self.roiImage = rawImage[y:y+h, x:x+w]
         self.visionCommon.SaveImage(self.roiImage, 'bin-roi')
     else:
-        print(f"No valid ROI found for this frame")
+        self.logger.debug(f"Object: {ROIProcessor.__name__}, method: {ROIProcessor.Execute.__name__}, Result: No valid ROI found for this frame")
                 
     self.logger.debug(f"Object: {ROIProcessor.__name__}, method: {ROIProcessor.Execute.__name__}, end")
     

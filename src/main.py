@@ -13,8 +13,8 @@ if __name__ == "__main__":
     visionWrapper = VisionWrapper()
     
     # Execute one frame whether from a file or a camera stream
-    # For executing using camera stream, look at the constructor of FrameGrabber object
-    # tipQCClassificationResult = visionWrapper.ExecuteTipQCClassification()
+    # For executing using camera stream, look at the constructor of FrameGrabber class
+    tipQCClassificationResult = visionWrapper.ExecuteTipQCClassification()
 
     # Execute one folder
     dataset_folder = 'dataset'

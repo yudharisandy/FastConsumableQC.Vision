@@ -3,7 +3,7 @@ import pickle
 from functools import partial
 from skimage import feature, future
 from sklearn.ensemble import RandomForestClassifier
-from BasicImageProcessor.VisionCommon import VisionCommon
+from Common.VisionCommon import VisionCommon
 import logging
 
 class TipQCDetector:
@@ -12,7 +12,11 @@ class TipQCDetector:
         self.logger.debug(f"Object: {TipQCDetector.__name__} was created")
         
         self.visionCommon = VisionCommon()
-        self.isTrainTipQC = False
+        if(isTrainTipQC):
+            self.classifier = RandomForestClassifier()
+        else:
+            with open('models/model.pkl', 'rb') as file:
+                self.classifier = pickle.load(file)
         
         sigma_min = 1
         sigma_max = 16
@@ -26,11 +30,7 @@ class TipQCDetector:
             channel_axis=-1,
         )
         
-        if(isTrainTipQC):
-            self.classifier = RandomForestClassifier()
-        else:
-            with open('models/model.pkl', 'rb') as file:
-                self.classifier = pickle.load(file)
+        
 
     def Train(self, imageToTrain):
         self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.Train.__name__}, start")

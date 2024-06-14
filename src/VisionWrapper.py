@@ -1,5 +1,5 @@
 from Playground import Playground
-from FrameGrabber import FrameGrabber
+from Utils.FrameGrabber import FrameGrabber
 import logging
 
 class VisionWrapper:
