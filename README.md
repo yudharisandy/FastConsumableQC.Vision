@@ -62,19 +62,19 @@ FastConsumableQC.Vision
 
 ### Highlevel Overview
 - Image processing pipeline:
-    - Raw image => Binary image => ROI => Segmented image (3 parts) => Image Boundaries => Classification
+    - Raw image => Binary image => ROI => Segmented image (3 parts) => Image Boundaries => Classify the label
 
-### Dumped image (Class: GO)
+### Dumped image 1
 - Raw image => Binary image => ROI image => Segmented image => Image Boundaries
 
   <img src="assets/965.png" alt="Raw image" width="170" /> <img src="assets/965_bin.png" alt="Raw image" width="170" /> <img src="assets/965_bin_ROI.png" alt="Raw image" width="120" /> <img src="assets/965_bin_ROI_segmented.png" alt="Raw image" width="120" /> <img src="assets/965_bin_ROI_segmented_boundary.png" alt="Raw image" width="120" />
 
-### Dumped image (Class: Arguably Good)
+### Dumped image 2
 - Raw image => Binary image => ROI image => Segmented image => Image Boundaries
 
   <img src="assets/6812.png" alt="Raw image" width="170" /> <img src="assets/6812_bin.png" alt="Raw image" width="170" /> <img src="assets/6812_bin_ROI.png" alt="Raw image" width="120" /> <img src="assets/6812_bin_ROI_segmented.png" alt="Raw image" width="120" /> <img src="assets/6812_bin_ROI_segmented_boundary.png" alt="Raw image" width="120" />
 
-### Dumped image (Class: NG)
+### Dumped image 3
 - Raw image => Binary image => ROI image => Segmented image => Image Boundaries
 
   <img src="assets/6573.png" alt="Raw image" width="170" /> <img src="assets/6573_bin.png" alt="Raw image" width="170" /> <img src="assets/6573_bin_ROI.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_ROI_segmented.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_ROI_segmented_boundary.png" alt="Raw image" width="120" />
@@ -84,7 +84,7 @@ FastConsumableQC.Vision
 - TODO: explain the scheme
 
 ## Plan to Improve
-- The following scheme possible could improve the robustness, escpecially when the objective is to improve the precision (low false positive) but keep maintaining good accuracy (acceptable false negative rate).
+- The following scheme possibly could improve the robustness, escpecially when the objective is to improve the precision (low false positive) but keep maintaining good accuracy (acceptable false negative rate).
 
 ![Proposed Scheme](assets/ProposedScheme.png)
 
