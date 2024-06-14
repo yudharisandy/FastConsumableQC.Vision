@@ -29,21 +29,9 @@
     - Raw image => Binary image => ROI (of raw image) => Segmented image (3 pixel values) => Classification
 
 ### Dumped image (Class: GO)
-- Raw image (1600x1200)
+- Raw image (1600x1200) => Binary image (1600x1200) => ROI image (350x351 => Vary for each images) => Segmented image (350x351 => Vary for each images)
 
-<img src="assets/965.png" alt="Raw image" width="400" /> <img src="assets/965_bin.png" alt="Raw image" width="400" />
-
-- Binary image (1600x1200)
-
-<img src="assets/965_bin.png" alt="Raw image" width="400" />
-
-- ROI image (350x351 => Vary for each images)
-
-<img src="assets/965_bin_ROI.png" alt="Raw image" width="400" />
-
-- Segmented image (350x351 => Vary for each images)
-
-<img src="assets/965_bin_ROI_segmented.png" alt="Raw image" width="400" />
+<img src="assets/965.png" alt="Raw image" width="200" /> <img src="assets/965_bin.png" alt="Raw image" width="200" /> <img src="assets/965_bin_ROI.png" alt="Raw image" width="200" /> <img src="assets/965_bin_ROI_segmented.png" alt="Raw image" width="200" />
 
 ### Dumped image (Class: Arguably Good)
 - Raw image (1600x1200)
