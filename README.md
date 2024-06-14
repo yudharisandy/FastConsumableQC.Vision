@@ -45,7 +45,7 @@
 
 ![Segmented image](assets/965_bin_ROI_segmented.png)
 
-### Dumped image (Class: NG)
+### Dumped image (Class: Arguably Good)
 - Raw image (1600x1200)
 
 ![Raw image](assets/6812.png)
@@ -61,6 +61,23 @@
 - Segmented image (350x351 => Vary for each images)
 
 ![Segmented image](assets/6812_bin_ROI_segmented.png)
+
+### Dumped image (Class: NG)
+- Raw image (1600x1200)
+
+![Raw image](assets/6573.png)
+
+- Binary image (1600x1200)
+
+![Binary image](assets/6573_bin.png)
+
+- ROI image (350x351 => Vary for each images)
+
+![ROI image](assets/6573_bin_ROI.png)
+
+- Segmented image (350x351 => Vary for each images)
+
+![Segmented image](assets/6573_bin_ROI_segmented.png)
 
 ### Final Classification Result
 - Final decision is based on segmented image.
