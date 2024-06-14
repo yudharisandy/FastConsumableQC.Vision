@@ -72,7 +72,7 @@ class TipQCDetector:
         self.visionCommon.SaveImage(imgSegmented, 'bin-roi-segmented', segmentation=True)
         
         imgBoundary = self.GetSegmentationBoundaries(imgSegmented)
-        self.visionCommon.SaveImage(imgBoundary, 'bin-roi-segmented-boundary', segmentation=True)
+        self.visionCommon.SaveImage(imgBoundary, 'bin-roi-segmented-boundary', boundary=True)
         
         # Inner circle analysis
         innerCircleRegion = imgSegmented == 3
