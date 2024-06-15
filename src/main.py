@@ -18,7 +18,8 @@ if __name__ == "__main__":
     
     # Execute a single image
     # folderPath = 'dataset'
-    # imagePath = os.path.join(folderPath, '965.png')
+    # imageName = '965.png'
+    # imagePath = os.path.join(folderPath, imageName)
     # result = visionWrapper.ExecuteTipQCClassification(imagePath)
     
     # Execute many images in a folder
