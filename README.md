@@ -46,7 +46,7 @@ FastConsumableQC.Vision
 - Set active directory to `/FastConsumableQC.Vision/src/`
 - Set the ```config.json``` file.
     ```
-    "runningMode": "Folder", // 3 running modes: ```Folder```, ```File```, ```Camera```.
+    "runningMode": "Folder", // 3 running modes: Folder, File, or Camera
     "folderPath": "dataset", // folder path to be detected
     "imagePath": "5146.png", // image path to be detected
     "cameraIndex": 0, 
