@@ -13,10 +13,8 @@ Upon examining sample images of tips, several critical issues have been identifi
 FastConsumableQC.Vision
 ├── assets
 ├── dataset
-├── image_dump
 ├── log
 ├── models
-├── test_images
 └── src
     ├── Common
         ├── Label.py
@@ -69,7 +67,7 @@ FastConsumableQC.Vision
 - Image processing pipeline:
     - Raw => Binary => Clean binary => (Bounding box ROI, ROI) => Segmented image => Image Boundaries => Plunger surface
     - Currently, the program analyzes the detected plunger surface, then output a score indicating how perfect the circle is.
-    - However, I found more schemes to completely solve the problem, but just have not done it yet. Please consider it the section of [Plan To Improve](#plan-to-improve).
+    - However, I found more schemes to completely solve the problem, but just have not done it yet. Please consider it in section of [Plan To Improve](#plan-to-improve).
 
 ### Dumped image 1
 - Raw => Binary => Clean binary => (Bounding box ROI, ROI) => Segmented image => Image Boundaries => Plunger surface
