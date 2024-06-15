@@ -1,6 +1,7 @@
 from LowLevelProcessor.RoiProcessor import ROIProcessor
 from HighLevelProcessor.TipQCDetector import TipQCDetector
 from Utils.FrameGrabber import FrameGrabber
+from Common.VisionCommon import VisionCommon
 import logging
 
 class Playground:
@@ -10,11 +11,15 @@ class Playground:
         
         self.roiProcessor = ROIProcessor()
         self.tipQCDetector = TipQCDetector(isTrainTipQC)
+        self.visionCommon = VisionCommon()
     
     def ExecuteTipQCClassification(self, rawImage):
         self.logger.debug(f"Object: {Playground.__name__}, method: {Playground.ExecuteTipQCClassification.__name__}, start")
         
+        self.visionCommon.SaveImage(rawImage, 'raw')
+        
         roiImage = self.roiProcessor.Execute(rawImage)
+        
         label = None
         if(roiImage is not None): 
             label = self.tipQCDetector.ExecuteTipQCClassification(roiImage)

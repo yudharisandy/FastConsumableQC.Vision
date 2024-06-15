@@ -25,9 +25,13 @@ FastConsumableQC.Vision
     ├── HighLevelProcessor
         └── TipQCDetector.py
     ├── LowLevelProcessor
+        ├── BasicVisualizer
+            └── BoundingBoxDrawer.py
+        ├── BinaryProcessor.py
         ├── BoundaryProcessor.py
         ├── GreyProcessor.py
-        └── RoiProcessor.py
+        ├── RoiProcessor.py
+        └── SmallObjectRemover.py
     ├── Utils
         └── FrameGrabber.py
     ├── main.py
@@ -67,17 +71,17 @@ FastConsumableQC.Vision
 ### Dumped image 1
 - Raw image => Binary image => ROI image => Segmented image => Image Boundaries
 
-  <img src="assets/965.png" alt="Raw image" width="170" /> <img src="assets/965_bin.png" alt="Raw image" width="170" /> <img src="assets/965_bin_ROI.png" alt="Raw image" width="120" /> <img src="assets/965_bin_ROI_segmented.png" alt="Raw image" width="120" /> <img src="assets/965_bin_ROI_segmented_boundary.png" alt="Raw image" width="120" />
+  <img src="assets/965_raw.png" alt="Raw image" width="170" /> <img src="assets/965_bin.png" alt="Raw image" width="170" /> <img src="assets/965_bin_clean.png" alt="Raw image" width="170" /> <img src="assets/965_bin_bounding-box.png" alt="Raw image" width="120" /> <img src="assets/965_bin_bounding-box-roi.png" alt="Raw image" width="120" /> <img src="assets/965_bin_clean_roi_segmented.png" alt="Raw image" width="120" /> <img src="assets/965_bin_clean_roi_segmented_boundary.png" alt="Raw image" width="120" /> <img src="assets/965_bin_clean_roi_segmented_inner-circle_0.8251.png" alt="Raw image" width="120" />
 
 ### Dumped image 2
 - Raw image => Binary image => ROI image => Segmented image => Image Boundaries
 
-  <img src="assets/6812.png" alt="Raw image" width="170" /> <img src="assets/6812_bin.png" alt="Raw image" width="170" /> <img src="assets/6812_bin_ROI.png" alt="Raw image" width="120" /> <img src="assets/6812_bin_ROI_segmented.png" alt="Raw image" width="120" /> <img src="assets/6812_bin_ROI_segmented_boundary.png" alt="Raw image" width="120" />
+  <img src="assets/6812_raw.png" alt="Raw image" width="170" /> <img src="assets/6812_bin.png" alt="Raw image" width="170" /> <img src="assets/6812_bin_clean.png" alt="Raw image" width="170" /> <img src="assets/6812_bin_bounding-box.png" alt="Raw image" width="120" /> <img src="assets/6812_bin_bounding-box-roi.png" alt="Raw image" width="120" /> <img src="assets/6812_bin_clean_roi_segmented.png" alt="Raw image" width="120" /> <img src="assets/6812_bin_clean_roi_segmented_boundary.png" alt="Raw image" width="120" /> <img src="assets/6812_bin_clean_roi_segmented_inner-circle_0.8251.png" alt="Raw image" width="120" />
 
 ### Dumped image 3
 - Raw image => Binary image => ROI image => Segmented image => Image Boundaries
 
-  <img src="assets/6573.png" alt="Raw image" width="170" /> <img src="assets/6573_bin.png" alt="Raw image" width="170" /> <img src="assets/6573_bin_ROI.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_ROI_segmented.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_ROI_segmented_boundary.png" alt="Raw image" width="120" />
+  <img src="assets/6573_raw.png" alt="Raw image" width="170" /> <img src="assets/6573_bin.png" alt="Raw image" width="170" /> <img src="assets/6573_bin_clean.png" alt="Raw image" width="170" /> <img src="assets/6573_bin_bounding-box.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_bounding-box-roi.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_clean_roi_segmented.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_clean_roi_segmented_boundary.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_clean_roi_segmented_inner-circle_0.8251.png" alt="Raw image" width="120" />
 
 ### Final Classification Result
 - Final decision is analyzed based on the segmented image boundaries.

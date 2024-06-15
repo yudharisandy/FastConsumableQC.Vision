@@ -1,10 +1,13 @@
 import numpy as np
-from skimage import feature, filters, morphology
+from skimage import feature, filters
 from functools import partial
 import cv2
 import logging
 from Common.VisionCommon import VisionCommon
 from LowLevelProcessor.GreyProcessor import GreyProcessor
+from LowLevelProcessor.BinaryProcessor import BinaryProcessor
+from LowLevelProcessor.SmallObjectRemover import SmallObjectRemover
+from LowLevelProcessor.BasicVisualizer.BoundingBoxDrawer import BoundingBoxDrawer
 
 class ROIProcessor:
     def __init__(self):
@@ -13,7 +16,11 @@ class ROIProcessor:
 
         self.roiImage = None
         self.visionCommon = VisionCommon()
+        
         self.greyProcessor = GreyProcessor()
+        self.binaryProcessor = BinaryProcessor()
+        self.smallObjecrRemover = SmallObjectRemover()
+        self.boundingBoxDrawer = BoundingBoxDrawer()
         
         sigma_min = 1
         sigma_max = 16
@@ -54,24 +61,24 @@ class ROIProcessor:
     def Execute(self, rawImage):
         self.logger.debug(f"Object: {ROIProcessor.__name__}, method: {ROIProcessor.Execute.__name__}, start")
 
-        gray_img = self.greyProcessor.Execute(rawImage)
+        greyImage = self.greyProcessor.Execute(rawImage)
 
-        thresh = filters.threshold_otsu(gray_img)
-        binary_img = gray_img > thresh
-
-        binary_img_uint8 = (binary_img * 255).astype(np.uint8)
-
-        binary_img_clean = morphology.remove_small_objects(binary_img, min_size=500)
-        binary_img_clean = (binary_img_clean * 255).astype(np.uint8)
+        binaryImage = self.binaryProcessor.Execute(greyImage)
+        binaryImageDump = (binaryImage * 255).astype(np.uint8)
+        self.visionCommon.SaveImage(binaryImageDump, 'bin')
         
-        self.visionCommon.SaveImage(binary_img_clean, 'bin')
+        binaryImageClean = self.smallObjecrRemover.Execute(binaryImage)
+        self.visionCommon.SaveImage(binaryImageClean, 'bin_clean')
 
-        largest_contour = self.get_largest_contour(binary_img_clean)
+        largest_contour = self.get_largest_contour(binaryImageClean)
 
         if largest_contour is not None:
             x, y, w, h = self.get_bounding_box(largest_contour)
+            imageWithBoundingBox = self.boundingBoxDrawer.Execute(rawImage, x, y, w, h)
+            self.visionCommon.SaveImage(imageWithBoundingBox, 'bin_clean_bounding-box')
+            
             self.roiImage = rawImage[y:y+h, x:x+w]
-            self.visionCommon.SaveImage(self.roiImage, 'bin-roi')
+            self.visionCommon.SaveImage(self.roiImage, 'bin_clean_bounding-box_roi')
         else:
             self.logger.debug(f"Object: {ROIProcessor.__name__}, method: {ROIProcessor.Execute.__name__}, Result: No valid ROI found for this frame")
                     

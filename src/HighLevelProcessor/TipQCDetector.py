@@ -71,20 +71,20 @@ class TipQCDetector:
         
         features = self.features_func(roiImage)
         imgSegmented = future.predict_segmenter(features, self.classifier)
-        self.visionCommon.SaveImage(imgSegmented, 'bin-roi-segmented', segmentation=True)
+        self.visionCommon.SaveImage(imgSegmented, 'bin_clean_roi_segmented', segmentation=True)
         
         imgBoundary = self.boundaryProcessor.Execute(imgSegmented)
-        self.visionCommon.SaveImage(imgBoundary, 'bin-roi-segmented-boundary', boundary=True)
+        self.visionCommon.SaveImage(imgBoundary, 'bin_clean_roi_segmented_boundary', boundary=True)
         
         # Inner circle analysis
         innerCircleRegion = imgSegmented == 3
         scoreInnerCircle = self.circleChecker.Analyze(innerCircleRegion)
-        self.visionCommon.SaveImage(innerCircleRegion, f'bin_roi_segmented_inner-circle_{scoreInnerCircle:.4f}', circle=True)
+        self.visionCommon.SaveImage(innerCircleRegion, f'bin_clean_roi_segmented_inner-circle_{scoreInnerCircle:.4f}', circle=True)
         
         # Outer circle analysis 
         outerCircleRegion = imgSegmented == 2
         scoreOuterCircle = self.circleChecker.Analyze(outerCircleRegion)
-        self.visionCommon.SaveImage(outerCircleRegion, f'bin_roi_segmented_outer-circle_{scoreOuterCircle:.4f}', circle=True)       
+        # self.visionCommon.SaveImage(outerCircleRegion, f'bin_clean_roi_segmented_outer-circle_{scoreOuterCircle:.4f}', circle=True)       
         
         label = self.FinalClassifier(scoreInnerCircle, scoreOuterCircle)
         
