@@ -53,7 +53,8 @@ FastConsumableQC.Vision
 - Example for inferencing by inputing a single image.
     ```
     folderPath = 'dataset'
-    imagePath = os.path.join(folderPath, '965.png')
+    imageName = '965.png'
+    imagePath = os.path.join(folderPath, imageName)
     result = visionWrapper.ExecuteTipQCClassification(imagePath)
     ```
 - Example for inferencing by inputing a camera stream.
