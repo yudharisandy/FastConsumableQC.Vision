@@ -66,7 +66,9 @@ FastConsumableQC.Vision
 ### Highlevel Overview of Processing Pipeline
 - Image processing pipeline:
     - Raw => Binary => Clean binary => (Bounding box ROI, ROI) => Segmented image => Image Boundaries => Plunger surface
-    - Currently, the program analyzes the detected plunger surface, then output a score indicating how perfect the circle is.
+    - Final Classification:
+        - Analyze plunger surface circle
+        - Analyze the cleaness of boundary image
     - However, I found more schemes to completely solve the problem, but just have not done it yet. Please consider it in section of [Plan To Improve](#plan-to-improve).
 
 ### Dumped image 1

@@ -7,6 +7,6 @@ class GreyProcessor:
         self.logger.debug(f"Object: {GreyProcessor.__name__} was created")
         
         
-    def Execute(self, rawImage):
-        greyImage = color.rgb2gray(rawImage)
+    def Execute(self, image3D):
+        greyImage = color.rgb2gray(image3D)
         return greyImage

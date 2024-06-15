@@ -8,6 +8,7 @@ from LowLevelAnalyzer.CircleChecker import CircleChecker
 import logging
 from Common.Label import Label
 from LowLevelProcessor.BoundaryProcessor import BoundaryProcessor
+from LowLevelProcessor.GreyProcessor import GreyProcessor
 
 class TipQCDetector:
     def __init__(self, isTrainTipQC):
@@ -17,9 +18,10 @@ class TipQCDetector:
         self.visionCommon = VisionCommon()
         self.circleChecker = CircleChecker()
         self.boundaryProcessor = BoundaryProcessor()
+        self.greyProcessor = GreyProcessor()
         
         if(isTrainTipQC):
-            self.classifier = RandomForestClassifier()
+            self.classifier = RandomForestClassifier(n_estimators=50, n_jobs=-1, max_depth=10, max_samples=0.05)
         else:
             with open('models/model.pkl', 'rb') as file:
                 self.classifier = pickle.load(file)
@@ -74,6 +76,7 @@ class TipQCDetector:
         self.visionCommon.SaveImage(imgSegmented, 'bin_clean_roi_segmented', segmentation=True)
         
         imgBoundary = self.boundaryProcessor.Execute(imgSegmented)
+        imgBoundary = self.greyProcessor.Execute(imgBoundary) # this will convert the image to 2D image
         self.visionCommon.SaveImage(imgBoundary, 'bin_clean_roi_segmented_boundary', boundary=True)
         
         # Inner circle analysis
