@@ -84,10 +84,6 @@ FastConsumableQC.Vision
 
   <img src="assets/6573_raw.png" alt="Raw image" width="170" /> <img src="assets/6573_bin.png" alt="Raw image" width="170" /> <img src="assets/6573_bin_clean.png" alt="Raw image" width="170" /> <img src="assets/6573_bin_clean_bounding-box.png" alt="Raw image" width="170" /> <img src="assets/6573_bin_clean_bounding-box-roi.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_clean_roi_segmented.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_clean_roi_segmented_boundary.png" alt="Raw image" width="120" /> <img src="assets/6573_bin_clean_roi_segmented_inner-circle_0.2679.png" alt="Raw image" width="120" />
 
-### Final Classification Result
-- Final decision is analyzed based on the segmented image boundaries.
-- TODO: explain the scheme
-
 ## Plan to Improve
 - The following scheme possibly could improve the robustness, escpecially when the objective is to improve the precision (low false positive) but keep maintaining good accuracy (acceptable false negative rate).
 
