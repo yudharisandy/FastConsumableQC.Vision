@@ -48,7 +48,7 @@ FastConsumableQC.Vision
     ```
     "runningMode": "Folder", // 3 running modes: Folder, File, or Camera
     "folderPath": "dataset", // folder path to be detected
-    "imagePath": "5146.png", // image path to be detected
+    "imagePath": "5146.png", // image path to be detected (no need to be specified if mode is Folder or Camera)
     "cameraIndex": 0, 
     "isTrainTipQC": false, // to train the segmentation model
     "imageToTrain": "dataset\\965.png"
