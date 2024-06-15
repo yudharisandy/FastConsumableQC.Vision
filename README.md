@@ -12,16 +12,21 @@ Upon examining sample images of tips, several critical issues have been identifi
 ```
 FastConsumableQC.Vision
 ├── assets
+├── config
 ├── dataset
 ├── log
 ├── models
 └── src
     ├── Common
+        ├── JsonLoader.py
         ├── Label.py
         ├── Logger.py
+        ├── RunningMode.py
         └── VisionCommon.py
     ├── HighLevelProcessor
         └── TipQCDetector.py
+    ├── LowLevelAnalyzer
+        └── CircleChecker.py
     ├── LowLevelProcessor
         ├── BasicVisualizer
             └── BoundingBoxDrawer.py
@@ -34,33 +39,24 @@ FastConsumableQC.Vision
         └── FrameGrabber.py
     ├── main.py
     ├── Playground.py
-    └── VisionWrapper.py 
+    └── VisionWrapper.py
 ```
 
 ## Run the code:
 - Set active directory to `/FastConsumableQC.Vision/src/`
+- Set the ```config.json``` file.
+    ```
+    "runningMode": "Folder", // 3 running modes: ```Folder```, ```File```, ```Camera```.
+    "folderPath": "dataset", // folder path to be detected
+    "imagePath": "5146.png", // image path to be detected
+    "cameraIndex": 0, 
+    "isTrainTipQC": false, // to train the segmentation model
+    "imageToTrain": "dataset\\965.png"
+    ```
 - `python main.py`
 
 ## Running Issues
 - If there is an incompatibale version issue regarding the loaded model, you can re-train the model by changing `self.isTrainTipQC = True` in `VisionWrapper.py`, then `python main.py`. This will only take a few seconds to complete. Later, you can change it back to `self.isTrainTipQC = False`.
-
-## How to use:
-- You could input a single image, camera stream, or a folder that contains many images by modifying ```main.py```.
-- Example for inferencing by inputing a folder.
-    ```
-    folderPath = 'dataset'
-    result = visionWrapper.ExecuteTipQClassificationOnFolder(folderPath)
-    ```
-- Example for inferencing by inputing a single image.
-    ```
-    folderPath = 'dataset'
-    imageName = '965.png'
-    imagePath = os.path.join(folderPath, imageName)
-    result = visionWrapper.ExecuteTipQCClassification(imagePath)
-    ```
-- Example for inferencing by inputing a camera stream.
-
-    ```result = visionWrapper.ExecuteTipQCClassification()```  
 
 ## Result
 - The classification result will be printed in the terminal. 

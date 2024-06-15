@@ -2,7 +2,7 @@
     "runningMode": "Folder",
     "folderPath": "dataset",
     "imagePath": "5146.png",
-    "cameraIndex": 1,
+    "cameraIndex": 0,
     "isTrainTipQC": false,
     "imageToTrain": "dataset\\965.png"
 }
