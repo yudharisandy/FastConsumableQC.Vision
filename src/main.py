@@ -1,29 +1,33 @@
 from VisionWrapper import VisionWrapper
 from Common.Logger import Logger
+from Common.JsonLoader import JsonLoader
+from Common.RunningMode import RunningMode
 import logging
 import os
 
 if __name__ == "__main__":
-    
     Logger.setup_logging()
-    
     logger = logging.getLogger(__name__)
-    
     logger.debug('Main is starting')
 
-    visionWrapper = VisionWrapper()
+    jsonLoader = JsonLoader()
+    config = jsonLoader.LoadConfig('config/config.json')
+
+    visionWrapper = VisionWrapper(config)
     
-    # Execute by using a camera stream
-    # result = visionWrapper.ExecuteTipQCClassification()
-    
-    # Execute a single image
-    # folderPath = 'dataset'
-    # imageName = '965.png'
-    # imagePath = os.path.join(folderPath, imageName)
-    # result = visionWrapper.ExecuteTipQCClassification(imagePath)
-    
-    # Execute many images in a folder
-    folderPath = 'dataset'
-    result = visionWrapper.ExecuteTipQClassificationOnFolder(folderPath)
+    mode = config.get("runningMode")
+
+    if mode == RunningMode.Camera.name:
+        result = visionWrapper.ExecuteTipQCClassification()
+    elif mode == RunningMode.File.name:
+        folderPath = config.get("folderPath")
+        imageName = config.get("imagePath")
+        imagePath = os.path.join(folderPath, imageName)
+        result = visionWrapper.ExecuteTipQCClassification(imagePath)
+    elif mode == RunningMode.Folder.name:
+        folderPath = config.get("folderPath")
+        result = visionWrapper.ExecuteTipQClassificationOnFolder(folderPath)
+    else:
+        logger.debug('Undefined mode!')
     
     logger.debug("Main end.")

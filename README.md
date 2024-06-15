@@ -41,6 +41,9 @@ FastConsumableQC.Vision
 - Set active directory to `/FastConsumableQC.Vision/src/`
 - `python main.py`
 
+## Running Issues
+- If there is an incompatibale version issue regarding the loaded model, you can re-train the model by changing `self.isTrainTipQC = True` in `VisionWrapper.py`, then `python main.py`. This will only take a few seconds to complete. Later, you can change it back to `self.isTrainTipQC = False`.
+
 ## How to use:
 - You could input a single image, camera stream, or a folder that contains many images by modifying ```main.py```.
 - Example for inferencing by inputing a folder.

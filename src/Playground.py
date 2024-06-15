@@ -28,11 +28,13 @@ class Playground:
         
         return label
     
-    def TrainTipQCClassification(self, imagePathToTrain):
+    def TrainTipQCClassification(self, imageToTrain):
         self.logger.debug(f"Object: {Playground.__name__}, method: {Playground.TrainTipQCClassification.__name__}, start")
-        
+
         frameGrabberToTrain = FrameGrabber()
-        rawImageToTrain = frameGrabberToTrain.GrabFrameToTrain(imagePathToTrain)
+        rawImageToTrain = frameGrabberToTrain.GrabFrameToTrain(imageToTrain)
+        self.visionCommon.SaveImage(rawImageToTrain, 'raw')
+
         roiImageToTrain = self.roiProcessor.Execute(rawImageToTrain)
         self.tipQCDetector.Train(roiImageToTrain)
         del frameGrabberToTrain

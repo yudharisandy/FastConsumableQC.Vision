@@ -4,11 +4,11 @@ import os
 import logging
 
 class FrameGrabber:
-    def __init__(self, camera_index=0):
+    def __init__(self, config):
         self.logger = logging.getLogger(__name__)
         self.logger.debug(f"Object: {FrameGrabber.__name__} was created")
         
-        self.cap = cv2.VideoCapture(camera_index)
+        self.cap = cv2.VideoCapture(config.get("cameraIndex"))
         if not self.cap.isOpened():
             raise Exception("Could not open video device")
 

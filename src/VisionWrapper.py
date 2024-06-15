@@ -5,23 +5,24 @@ import os
 from Common.Label import Label
 
 class VisionWrapper:
-    def __init__(self):
+    def __init__(self, config):
         self.logger = logging.getLogger(__name__)
         self.logger.debug(f"Object: {VisionWrapper.__name__} was created")
         
-        self.isTrainTipQC = False
+        self.config = config
+        self.isTrainTipQC = self.config.get("isTrainTipQC", False)
         self.playground = Playground(self.isTrainTipQC)
-        self.frameGrabber = FrameGrabber()
+        self.frameGrabber = FrameGrabber(self.config)
     
     
     def ExecuteTipQCClassification(self, imagePath=None):
         self.logger.debug(f"Object: {VisionWrapper.__name__}, method: {VisionWrapper.ExecuteTipQCClassification.__name__}, start")
-    
+
         rawImage = self.frameGrabber.GrabFrame(imagePath)
         # self.frameGrabber.ShowFrame()
         
         if(self.isTrainTipQC):
-            label = self.playground.TrainTipQCClassification('dataset\\965.png')
+            label = self.playground.TrainTipQCClassification(self.config.get("imageToTrain"))
         else:
             label = self.playground.ExecuteTipQCClassification(rawImage)
         
@@ -35,12 +36,15 @@ class VisionWrapper:
     def ExecuteTipQClassificationOnFolder(self, folder):
         self.logger.debug(f"Object: {VisionWrapper.__name__}, method: {VisionWrapper.ExecuteTipQCClassification.__name__}, start")
 
-        imagePaths = [os.path.join(folder, f) for f in os.listdir(folder) if f.endswith(('.png', '.jpg', '.jpeg'))]
+        if(self.isTrainTipQC):
+            self.playground.TrainTipQCClassification(self.config.get("imageToTrain"))
+        else:
+            imagePaths = [os.path.join(folder, f) for f in os.listdir(folder) if f.endswith(('.png', '.jpg', '.jpeg'))]
 
-        for imagePath in imagePaths:
-            rawImage = self.frameGrabber.GrabFrame(imagePath)
-            label = self.playground.ExecuteTipQCClassification(rawImage)
-            self.ShowResult(label, imagePath) # Temporary
+            for imagePath in imagePaths:
+                rawImage = self.frameGrabber.GrabFrame(imagePath)
+                label = self.playground.ExecuteTipQCClassification(rawImage)
+                self.ShowResult(label, imagePath) # Temporary
             
         self.logger.debug(f"Object: {VisionWrapper.__name__}, method: {VisionWrapper.ExecuteTipQCClassification.__name__}, end")
     
