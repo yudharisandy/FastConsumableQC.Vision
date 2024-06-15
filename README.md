@@ -65,9 +65,11 @@ FastConsumableQC.Vision
 - The classification result will be printed in the terminal. 
 - The dumped image logs and log.txt file will be stored inside `/FastConsumableQC.Vision/log/` directory.
 
-### Highlevel Overview
+### Highlevel Overview of Processing Pipeline
 - Image processing pipeline:
-    - Raw image => Binary image => ROI => Segmented image (3 parts) => Image Boundaries => Classify the label
+    - Raw => Binary => Clean binary => (Bounding box ROI, ROI) => Segmented image => Image Boundaries => Plunger surface
+    - Currently, the program analyzes the detected plunger surface, then output a score indicating how perfect the circle is.
+    - However, I found more schemes to completely solve the problem, but just have not done it yet. Please consider it the section of [Plan To Improve](#plan-to-improve).
 
 ### Dumped image 1
 - Raw => Binary => Clean binary => (Bounding box ROI, ROI) => Segmented image => Image Boundaries => Plunger surface
