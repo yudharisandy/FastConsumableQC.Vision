@@ -62,7 +62,7 @@ FastConsumableQC.Vision
 
 ## Result
 - The classification result will be printed in the terminal. 
-- The dumped image logs will be stored inside `/FastConsumableQC.Vision/image_dump/` directory.
+- The dumped image logs and log.txt file will be stored inside `/FastConsumableQC.Vision/log/` directory.
 
 ### Highlevel Overview
 - Image processing pipeline:

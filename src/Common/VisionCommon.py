@@ -11,7 +11,7 @@ class VisionCommon:
     def SaveImage(self, image, processingType, segmentation=False, circle=False, boundary=False):
         self.logger.debug(f"Object: {VisionCommon.__name__}, method: {VisionCommon.SaveImage.__name__}, start")
         
-        folder_path = 'image_dump'
+        folder_path = 'log'
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
 
