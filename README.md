@@ -70,7 +70,7 @@ FastConsumableQC.Vision
 - Image processing pipeline:
     - Raw => Binary => Clean binary => (Bounding box ROI, ROI) => Segmented image => Image Boundaries => Plunger surface
     - Score calculation:
-        - Analyze plunger surface circle
+        - Analyze plunger surface circle (This score is sufficient to classify a tip as NG class, but not sufficient for classification as G class, still need to be combined with another score analyzer)
     - However, I found more schemes to completely solve the problem, but just have not done it yet. Please consider it in section of [Plan To Improve](#plan-to-improve).
 
 ### Dumped image 1
