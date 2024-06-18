@@ -63,7 +63,7 @@ FastConsumableQC.Vision
 - If there is an incompatibale version issue regarding the loaded model, you can re-create the `model.pkl` by changing `isTrainTipQC = true` in `config.json`, then `python main.py`. This will only take a few seconds to complete. Later, you need to change it back to `isTrainTipQC = false` for inferencing in another mode.
 
 ## Result
-- Currently, the result has not been finalized yet, this code only print the score of plunger surface analyzer.
+- Currently, the result has not been finalized yet, this code only print the score of plunger surface analyzer in the terminal. Or you can check the score in teh log file name, ex: `<2024-06-18_12-16-041055_bin_clean_roi_segmented_inner-circle_0.4192>`. The last `0.4192` is the score.
 - The dumped image logs and log.txt file will be stored inside `/FastConsumableQC.Vision/log/` directory.
 
 ### Highlevel Overview of Processing Pipeline
