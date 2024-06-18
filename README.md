@@ -9,7 +9,7 @@ Upon examining sample images of tips, several critical issues have been identifi
 - Python 3.11
 - skimage: `pip install scikit-image`
 - OpenCV: `pip install opencv-python`
-- Recommended to use ![Anaconda](#https://www.anaconda.com/download/success).
+- Recommended to use [Anaconda](#https://www.anaconda.com/download/success).
 
 ## Foldering Structure
 ```
@@ -69,13 +69,12 @@ FastConsumableQC.Vision
 ### Highlevel Overview of Processing Pipeline
 - Image processing pipeline:
     - Raw => Binary => Clean binary => (Bounding box ROI, ROI) => Segmented image => Image Boundaries => Plunger surface
-    - Final Classification:
+    - Score calculation:
         - Analyze plunger surface circle
-        - Analyze the cleaness of boundary image
     - However, I found more schemes to completely solve the problem, but just have not done it yet. Please consider it in section of [Plan To Improve](#plan-to-improve).
 
 ### Dumped image 1
-- Raw => Binary => Clean binary => (Bounding box ROI, ROI) => Segmented image => Image Boundaries => Plunger surface
+- Raw => Binary => Clean binary => (Bounding box ROI, ROI) => Segmented image => Image Boundaries => Plunger surface 
 
   <img src="assets/965_raw.png" alt="Raw image" width="170" /> <img src="assets/965_bin.png" alt="Raw image" width="170" /> <img src="assets/965_bin_clean.png" alt="Raw image" width="170" /> <img src="assets/965_bin_clean_bounding-box.png" alt="Raw image" width="170" /> <img src="assets/965_bin_clean_bounding-box-roi.png" alt="Raw image" width="120" /> <img src="assets/965_bin_clean_roi_segmented.png" alt="Raw image" width="120" /> <img src="assets/965_bin_clean_roi_segmented_boundary.png" alt="Raw image" width="120" /> <img src="assets/965_bin_clean_roi_segmented_inner-circle_0.8251.png" alt="Raw image" width="120" />
 
