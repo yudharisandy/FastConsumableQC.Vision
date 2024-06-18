@@ -11,7 +11,7 @@ class VisionWrapper:
         
         self.config = config
         self.isTrainTipQC = self.config.get("isTrainTipQC", False)
-        self.playground = Playground(self.isTrainTipQC)
+        self.playground = Playground(self.config)
         self.frameGrabber = FrameGrabber(self.config)
     
     
@@ -26,7 +26,7 @@ class VisionWrapper:
         else:
             label = self.playground.ExecuteTipQCClassification(rawImage)
         
-        self.ShowResult(label, imagePath) # Temporary
+        # self.ShowResult(label, imagePath) # Temporary
 
         self.logger.debug(f"Object: {VisionWrapper.__name__}, method: {VisionWrapper.ExecuteTipQCClassification.__name__}, end")
         
@@ -44,7 +44,7 @@ class VisionWrapper:
             for imagePath in imagePaths:
                 rawImage = self.frameGrabber.GrabFrame(imagePath)
                 label = self.playground.ExecuteTipQCClassification(rawImage)
-                self.ShowResult(label, imagePath) # Temporary
+                # self.ShowResult(label, imagePath) # Temporary
             
         self.logger.debug(f"Object: {VisionWrapper.__name__}, method: {VisionWrapper.ExecuteTipQCClassification.__name__}, end")
     

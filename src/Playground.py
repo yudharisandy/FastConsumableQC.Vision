@@ -5,12 +5,13 @@ from Common.VisionCommon import VisionCommon
 import logging
 
 class Playground:
-    def __init__(self, isTrainTipQC):
+    def __init__(self, config):
         self.logger = logging.getLogger(__name__)
         self.logger.debug(f"Object: {Playground.__name__} was created")
         
+        self.config = config
         self.roiProcessor = ROIProcessor()
-        self.tipQCDetector = TipQCDetector(isTrainTipQC)
+        self.tipQCDetector = TipQCDetector(self.config.get("isTrainTipQC"))
         self.visionCommon = VisionCommon()
     
     def ExecuteTipQCClassification(self, rawImage):
@@ -31,7 +32,7 @@ class Playground:
     def TrainTipQCClassification(self, imageToTrain):
         self.logger.debug(f"Object: {Playground.__name__}, method: {Playground.TrainTipQCClassification.__name__}, start")
 
-        frameGrabberToTrain = FrameGrabber()
+        frameGrabberToTrain = FrameGrabber(self.config)
         rawImageToTrain = frameGrabberToTrain.GrabFrameToTrain(imageToTrain)
         self.visionCommon.SaveImage(rawImageToTrain, 'raw')
 

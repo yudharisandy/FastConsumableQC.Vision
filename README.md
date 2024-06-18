@@ -9,7 +9,7 @@ Upon examining sample images of tips, several critical issues have been identifi
 - Python 3.11
 - skimage: `pip install scikit-image`
 - OpenCV: `pip install opencv-python`
-- Recommended to use [Anaconda](#https://www.anaconda.com/download/success).
+- Recommended to use [Anaconda](https://www.anaconda.com/download/success).
 
 ## Foldering Structure
 ```
@@ -53,17 +53,17 @@ FastConsumableQC.Vision
     "runningMode": "Folder", // 3 running modes: Folder, File, or Camera
     "folderPath": "dataset", // folder path to be detected
     "imagePath": "5146.png", // image path to be detected (no need to be specified if mode is Folder or Camera)
-    "cameraIndex": 0, 
-    "isTrainTipQC": false, // to train the segmentation model
-    "imageToTrain": "dataset\\965.png"
+    "cameraIndex": 0, // Camera Index
+    "isTrainTipQC": false, // Condition whether to train the segmentation model or not
+    "imageToTrain": "dataset\\965.png" // Image to train the segmentation model (do not need to change this in order to run this code)
     ```
 - `python main.py`
 
 ## Running Issues
-- If there is an incompatibale version issue regarding the loaded model, you can re-train the model by changing `self.isTrainTipQC = True` in `VisionWrapper.py`, then `python main.py`. This will only take a few seconds to complete. Later, you can change it back to `self.isTrainTipQC = False`.
+- If there is an incompatibale version issue regarding the loaded model, you can re-create the `model.pkl` by changing `isTrainTipQC = True` in `config.json`, then `python main.py`. This will only take a few seconds to complete. Later, you need to change it back to `isTrainTipQC = False` for inferencing in another mode.
 
 ## Result
-- The classification result will be printed in the terminal. 
+- Currently, the result has not been finalized yet, this code only print the score of plunger surface analyzer.
 - The dumped image logs and log.txt file will be stored inside `/FastConsumableQC.Vision/log/` directory.
 
 ### Highlevel Overview of Processing Pipeline

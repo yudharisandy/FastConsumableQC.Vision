@@ -73,12 +73,13 @@ class TipQCDetector:
         # Inner circle analysis
         innerCircleRegion = imgSegmented == 3
         scoreInnerCircle = self.circleChecker.Analyze(innerCircleRegion)
+        print(f"Score of Inner Circle: {scoreInnerCircle:.4f}")
         self.visionCommon.SaveImage(innerCircleRegion, f'bin_clean_roi_segmented_inner-circle_{scoreInnerCircle:.4f}', circle=True)
         
         # Outer circle analysis 
         outerCircleRegion = imgSegmented == 2
         scoreOuterCircle = self.circleChecker.Analyze(outerCircleRegion)
-        self.visionCommon.SaveImage(outerCircleRegion, f'bin_clean_roi_segmented_outer-circle_{scoreOuterCircle:.4f}', circle=True)  
+        # self.visionCommon.SaveImage(outerCircleRegion, f'bin_clean_roi_segmented_outer-circle_{scoreOuterCircle:.4f}', circle=True)  
 
         self.logger.debug(f"Object: {TipQCDetector.__name__}, method: {TipQCDetector.Train.__name__}, end")
     
@@ -97,12 +98,13 @@ class TipQCDetector:
         # Inner circle analysis
         innerCircleRegion = imgSegmented == 3
         scoreInnerCircle = self.circleChecker.Analyze(innerCircleRegion)
+        print(f"Score of Inner Circle: {scoreInnerCircle:.4f}")
         self.visionCommon.SaveImage(innerCircleRegion, f'bin_clean_roi_segmented_inner-circle_{scoreInnerCircle:.4f}', circle=True)
         
         # Outer circle analysis 
         outerCircleRegion = imgSegmented == 2
         scoreOuterCircle = self.circleChecker.Analyze(outerCircleRegion)
-        self.visionCommon.SaveImage(outerCircleRegion, f'bin_clean_roi_segmented_outer-circle_{scoreOuterCircle:.4f}', circle=True)       
+        # self.visionCommon.SaveImage(outerCircleRegion, f'bin_clean_roi_segmented_outer-circle_{scoreOuterCircle:.4f}', circle=True)       
         
         label = self.FinalClassifier(scoreInnerCircle, scoreOuterCircle)
         
