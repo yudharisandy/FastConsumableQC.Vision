@@ -1,5 +1,7 @@
 # FastConsumableQC.Vision
 
+(The repo is still under construction)
+
 ## Problem Definition
 Upon examining sample images of tips, several critical issues have been identified. These issues include inconsistent tip geometry, such as irregularities in the shape of the tip end, as well as surface defects and anomalies that compromise the integrity of the tips. These visual discrepancies highlight the urgent need for an automated inspection solution to ensure consistent quality and reliability of produced tips. The primary focus should be on reducing the false positive rate to achieve high precision, while also maintaining good accuracy with an acceptable false negative rate (good recall). Implementing such a system will enhance overall production efficiency.
 
@@ -7,12 +9,14 @@ Upon examining sample images of tips, several critical issues have been identifi
 - Python 3.11
 - skimage: `pip install scikit-image`
 - OpenCV: `pip install opencv-python`
+- Recommended to use ![Anaconda](#https://www.anaconda.com/download/success).
 
 ## Foldering Structure
 ```
 FastConsumableQC.Vision
 ├── assets
 ├── config
+    └── config.json
 ├── dataset
 ├── log
 ├── models
