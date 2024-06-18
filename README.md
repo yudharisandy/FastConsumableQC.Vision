@@ -60,7 +60,7 @@ FastConsumableQC.Vision
 - `python main.py`
 
 ## Running Issues
-- If there is an incompatibale version issue regarding the loaded model, you can re-create the `model.pkl` by changing `isTrainTipQC = True` in `config.json`, then `python main.py`. This will only take a few seconds to complete. Later, you need to change it back to `isTrainTipQC = False` for inferencing in another mode.
+- If there is an incompatibale version issue regarding the loaded model, you can re-create the `model.pkl` by changing `isTrainTipQC = true` in `config.json`, then `python main.py`. This will only take a few seconds to complete. Later, you need to change it back to `isTrainTipQC = false` for inferencing in another mode.
 
 ## Result
 - Currently, the result has not been finalized yet, this code only print the score of plunger surface analyzer.
